@@ -1,9 +1,7 @@
+import Navigation from "@/components/navigation";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const larsseit = localFont({
   src: [
@@ -38,18 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={larsseit.className}>
-        <nav className="flex w-full justify-between items-center p-14">
-          <div className="leading-5 font-[400]">
-            <p>Abhishek Kalia</p>
-            <p className="opacity-50">Product Designer & Frontend Developer</p>
-          </div>
-          <ul className="flex gap-4">
-            <li>Work</li>
-            <li>About</li>
-            <li>Journal</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+        <Navigation />
         {children}
       </body>
     </html>
