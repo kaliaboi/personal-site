@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { FC } from "react";
 
-interface navigationProps {}
-
 const links = [
   {
     title: "Work",
@@ -22,7 +20,7 @@ const links = [
   },
 ];
 
-const Navigation: FC<navigationProps> = ({}) => {
+const Navigation: FC = ({}) => {
   return (
     <nav className="flex w-full justify-between items-center p-14 text-[18px]">
       <div className="leading-6 font-[400]">
