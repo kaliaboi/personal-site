@@ -53,7 +53,7 @@ const Navigation: FC = ({}) => {
           </a>
           <ul className="flex gap-4">
             {links.map((link) => (
-              <li>
+              <li key={link.title}>
                 <Link
                   href={link.href}
                   className={cn(
