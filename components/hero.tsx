@@ -56,13 +56,13 @@ const Hero: FC = ({}) => {
       className="my-12 h-60 flex flex-col justify-center"
     >
       <div>
-        <p className="mb-4">Hi, I&apos;m Abhishek</p>
+        <p className="mb-4 text-[20px]">Hi, I&apos;m Abhishek</p>
         <motion.h2
           key={intro}
           variants={variants}
           animate={"show"}
           initial="hide"
-          className="text-[36px] font-[400] max-w-2xl leading-[115%] mb-8"
+          className="text-[44px] font-[700] max-w-2xl leading-[115%] mb-8"
         >
           {intro}
         </motion.h2>

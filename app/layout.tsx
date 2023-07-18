@@ -81,11 +81,7 @@ export default function RootLayout({
         <link rel="manifest" href="./site.webmanifest" />
         <meta name="theme-color" content="#4a4a4a" />
       </head>
-      <body className={gtp.className + " antialiased"}>
-        <Navigation />
-        {children}
-        <Footer />
-      </body>
+      <body className={larsseit.className + " antialiased"}>{children}</body>
     </html>
   );
 }

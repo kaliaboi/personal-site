@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { FC } from "react";
-import { Button, buttonVariants } from "./ui/button";
-import { Menu, MenuIcon } from "lucide-react";
+import { buttonVariants } from "./ui/button";
+import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Separator } from "./ui/separator";
@@ -12,8 +12,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -27,8 +25,8 @@ export const links = [
     href: "/about",
   },
   {
-    title: "Blog",
-    href: "/blog",
+    title: "Writing",
+    href: "/writing",
   },
   {
     title: "Contact",
