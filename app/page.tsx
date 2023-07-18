@@ -1,6 +1,7 @@
 "use client";
 import Hero from "@/components/hero";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,17 +20,28 @@ export default function Home() {
         <p className="mb-4 font-bold text-[12px]">SELECTED WORK</p>
         <div className="grid grid-cols-1 gap-12 w-full">
           <div className="card w-full">
-            <div className="aspect-video w-full bg-zinc-700 mb-2"></div>
+            <div className="aspect-video w-full mb-2 relative">
+              <Image
+                src={"/tc-1.png"}
+                fill
+                alt="test"
+                className="border border-zinc-50/20"
+              />
+            </div>
             <p>Project Title</p>
             <p className="opacity-50">Project Catrgory</p>
           </div>
           <div className="card w-full">
-            <div className="aspect-video w-full bg-zinc-700 mb-2"></div>
+            <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
+              <Image src={"/tc-2.png"} fill alt="test" />
+            </div>
             <p>Project Title</p>
             <p className="opacity-50">Project Catrgory</p>
           </div>
           <div className="card w-full">
-            <div className="aspect-video w-full bg-zinc-700 mb-2"></div>
+            <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
+              <Image src={"/tc-3.png"} fill alt="test" />
+            </div>
             <p>Project Title</p>
             <p className="opacity-50">Project Catrgory</p>
           </div>

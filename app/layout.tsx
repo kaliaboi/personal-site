@@ -1,7 +1,11 @@
-import Navigation from "@/components/navigation";
+import Navigation, { links } from "@/components/navigation";
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
 const larsseit = localFont({
   src: [
@@ -70,9 +74,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={gtp.className}>
+      <body className={gtp.className + " antialiased"}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

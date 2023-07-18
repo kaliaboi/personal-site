@@ -17,7 +17,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const links = [
+export const links = [
   {
     title: "Work",
     href: "/",
@@ -49,11 +49,11 @@ const Navigation: FC = ({}) => {
       className="dark:bg-zinc-950 bg-zinc-50 fixed w-full z-20 top-0 left-0 font-[200]"
     >
       <div className="container max-w-6xl">
-        <div className="flex items-center justify-between p-6">
+        <div className="flex items-center justify-between p-2 md:py-6">
           <a href="/" className="flex items-center py-2">
             <div className="w-[48px] h-[48px] rounded-full relative">
               <Image
-                src={"/logo.svg"}
+                src={"/logo-dark.svg"}
                 fill
                 alt="logo-dark"
                 className="hidden dark:block"
@@ -65,7 +65,7 @@ const Navigation: FC = ({}) => {
                 className="block dark:hidden"
               />
             </div>
-            <span className="self-center font-[300] dark:text-zinc-50 ml-4 md:block hidden">
+            <span className="self-center font-[400] dark:text-zinc-50 ml-4 md:block hidden">
               <p className="text-base">Abhishek.</p>
               <p className="opacity-50">Product Designer, Frontend Developer</p>
             </span>
