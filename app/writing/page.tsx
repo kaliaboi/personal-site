@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <div>
             <h2 className="text-[32px] font-extrabold">
-              Let's open the garage door
+              Let&apos;s open the garage door
             </h2>
             <p className="text-[16px] opacity-50">Sep 6, 2022</p>
           </div>
