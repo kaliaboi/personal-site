@@ -6,7 +6,7 @@ import { Shuffle } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 /**
- * FIXME: Add more intros with similar sentence length
+ * TODO: Add more intros with similar sentence length
  *
  */
 

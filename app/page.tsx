@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 /**
- * FIXME: Move work cards to new components
- * FIXME: Make projects object
- * FIXME: Make blog page
- * FIXME: Add Sanity
- * FIXME: Make about page
+ * TODO: Move work cards to new components
+ * TODO: Make projects object
+ * TODO: Make blog page
+ * TODO: Add Sanity
+ * TODO: Make about page
  *
  */
 
