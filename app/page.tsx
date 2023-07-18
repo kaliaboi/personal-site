@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="space-y-12 mt-48 container">
+    <main className="space-y-12 mt-48 container max-w-6xl">
       <Hero />
       <motion.section
         initial={{ opacity: 0, y: 50 }}

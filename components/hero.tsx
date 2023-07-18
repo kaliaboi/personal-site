@@ -48,25 +48,28 @@ const Hero: FC = ({}) => {
         delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="my-12 h-auto"
+      className="my-12 h-60 flex flex-col justify-center"
     >
-      <motion.h2
-        key={intro}
-        variants={variants}
-        animate={"show"}
-        initial="hide"
-        className="text-[32px] md:text-[48px] lg:text-[56px] font-[400] max-w-4xl leading-[100%] mb-8"
-      >
-        {intro}
-      </motion.h2>
-      <Button
-        variant="ghost"
-        className="flex gap-4 font-mono uppercase font-bold"
-        onClick={randomizeIntro}
-      >
-        <Shuffle size={24} color="#22d3ee" />
-        Make it honest
-      </Button>
+      <div>
+        <p className="mb-4">Hi, I'm Abhishek</p>
+        <motion.h2
+          key={intro}
+          variants={variants}
+          animate={"show"}
+          initial="hide"
+          className="text-[36px] font-[400] max-w-2xl leading-[115%] mb-8"
+        >
+          {intro}
+        </motion.h2>
+        <Button
+          variant="secondary"
+          className="flex gap-4 font-mono uppercase font-bold"
+          onClick={randomizeIntro}
+        >
+          <Shuffle size={18} />
+          Make it honest
+        </Button>
+      </div>
     </motion.div>
   );
 };

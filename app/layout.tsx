@@ -55,11 +55,6 @@ const gtp = localFont({
       weight: "800",
       style: "normal",
     },
-    {
-      path: "../fonts/Larsseit-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
   ],
 });
 
@@ -75,7 +70,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={larsseit.className}>
+      <body className={gtp.className}>
         <Navigation />
         {children}
       </body>
