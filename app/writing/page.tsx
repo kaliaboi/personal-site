@@ -31,7 +31,7 @@ export default function Home() {
             delay: 0.7,
             ease: [0, 0.71, 0.2, 1.01],
           }}
-          className="mt-12 py-12 flex flex-col gap-12"
+          className="py-12 mt-12 flex flex-col gap-12"
         >
           <div>
             <h2 className="text-[32px] font-extrabold">

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { buttonVariants } from "./ui/button";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
@@ -35,6 +35,13 @@ export const links = [
 ];
 
 const Navigation: FC = ({}) => {
+  const [offset, setOffset] = useState(0);
+  useEffect(() => {
+    setOffset(window.scrollY);
+    window.addEventListener("scroll", (e) => {
+      setOffset(window.scrollY);
+    });
+  }, []);
   return (
     <motion.nav
       initial={{ opacity: 0, y: -50 }}
@@ -47,7 +54,7 @@ const Navigation: FC = ({}) => {
       className="dark:bg-zinc-950 bg-zinc-50 fixed w-full z-20 top-0 left-0 font-[200]"
     >
       <div className="container max-w-6xl">
-        <div className="flex items-center justify-between p-2 md:py-6">
+        <div className="flex items-center justify-between">
           <a href="/" className="flex items-center py-2">
             <div className="w-[48px] h-[48px] rounded-full relative">
               <Image
@@ -63,8 +70,12 @@ const Navigation: FC = ({}) => {
                 className="block dark:hidden"
               />
             </div>
-            <span className="self-center font-[400] dark:text-zinc-50 ml-4 md:block hidden">
-              <p className="text-base">Abhishek.</p>
+            <span
+              className={`${
+                offset !== 0 ? "opacity-100" : "-translate-y-2 opacity-0"
+              } self-center font-[400] dark:text-zinc-50 ml-4 md:block hidden transition-all`}
+            >
+              <p className="text-base">Abhishek</p>
               <p className="opacity-50">Product Designer, Frontend Developer</p>
             </span>
           </a>
@@ -75,7 +86,7 @@ const Navigation: FC = ({}) => {
                   href={link.href}
                   className={cn(
                     buttonVariants({ variant: "link" }),
-                    "text-base dark:text-zinc-50 underline-offset-8"
+                    "text-base dark:text-zinc-50 underline-offset-8 h-28"
                   )}
                 >
                   {link.title}

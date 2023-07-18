@@ -1,12 +1,9 @@
-import Navigation, { links } from "@/components/navigation";
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Separator } from "@/components/ui/separator";
-import Image from "next/image";
-import Link from "next/link";
-import Footer from "@/components/footer";
+import { Inter } from "next/font/google";
 
+const inter = Inter({ subsets: ["latin"] });
 const larsseit = localFont({
   src: [
     {
@@ -74,14 +71,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="./favicon.ico" sizes="any" />
-        <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-        <link rel="manifest" href="./site.webmanifest" />
-        <meta name="theme-color" content="#4a4a4a" />
-      </head>
-      <body className={larsseit.className + " antialiased"}>{children}</body>
+      <body className={inter.className + " antialiased"}>{children}</body>
     </html>
   );
 }

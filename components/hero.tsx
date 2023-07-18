@@ -29,7 +29,7 @@ export const variants = {
     },
   },
   hide: {
-    x: -20,
+    x: 0,
     opacity: 0,
   },
 };
@@ -56,13 +56,13 @@ const Hero: FC = ({}) => {
       className="my-12 h-60 flex flex-col justify-center"
     >
       <div>
-        <p className="mb-4 text-[20px]">Hi, I&apos;m Abhishek</p>
+        <p className="mb-4 text-[16px] opacity-50">Hi, I&apos;m Abhishek</p>
         <motion.h2
           key={intro}
           variants={variants}
           animate={"show"}
           initial="hide"
-          className="text-[44px] font-[700] max-w-2xl leading-[115%] mb-8"
+          className="text-[44px] font-[700] max-w-3xl leading-[115%] mb-8"
         >
           {intro}
         </motion.h2>
