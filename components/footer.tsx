@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="flex flex-col gap-1">
             <p>This site</p>
             {links.map((link) => (
-              <Link href={link.href} className="opacity-50">
+              <Link key={link.title} href={link.href} className="opacity-50">
                 {link.title}
               </Link>
             ))}
