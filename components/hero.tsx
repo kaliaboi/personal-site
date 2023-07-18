@@ -51,7 +51,7 @@ const Hero: FC = ({}) => {
       className="my-12 h-60 flex flex-col justify-center"
     >
       <div>
-        <p className="mb-4">Hi, I'm Abhishek</p>
+        <p className="mb-4">Hi, I&apos;m Abhishek</p>
         <motion.h2
           key={intro}
           variants={variants}
