@@ -12,6 +12,11 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 
+/**
+ * FIXME: Add links
+ *
+ */
+
 export default function Footer() {
   return (
     <footer className="mt-12 h-64 container max-w-6xl">

@@ -5,6 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Shuffle } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
+/**
+ * FIXME: Add more intros with similar sentence length
+ *
+ */
+
 const intros = [
   "I take ideas from the whiteboard to production with design and development.",
   "The frontend engineer who can transform your mundane ideas into slightly less terrible user experiences.",

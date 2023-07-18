@@ -3,6 +3,15 @@ import Hero from "@/components/hero";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+/**
+ * FIXME: Move work cards to new components
+ * FIXME: Make projects object
+ * FIXME: Make blog page
+ * FIXME: Add Sanity
+ * FIXME: Make about page
+ *
+ */
+
 export default function Home() {
   return (
     <main className="space-y-12 mt-48 container max-w-6xl">
