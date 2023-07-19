@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { FC } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
 const Work: FC = ({}) => {
   return (
@@ -17,42 +20,51 @@ const Work: FC = ({}) => {
       className="work pt-12"
     >
       <p className="mb-4 font-bold text-[12px]">SELECTED WORK</p>
-      <div className="grid grid-cols-1 gap-12 w-full">
+      <div className="grid grid-cols-1 gap-16 w-full">
         <div className="card w-full">
           <div className="aspect-video w-full mb-2 relative">
-            <Image
-              src={"/tc-1.png"}
-              fill
-              alt="test"
-              className="border border-zinc-50/20"
-            />
+            <Image src={"/pour-2.png"} fill alt="test" />
           </div>
-          <p>Project Title</p>
-          <p className="opacity-50">Project Catrgory</p>
+          <Link
+            href={"https://journi.site"}
+            className={cn(
+              buttonVariants({ variant: "link" }),
+              "pl-0 underline"
+            )}
+          >
+            Pour – A journalling app for people in therapy
+          </Link>
+          <p className="opacity-50">Product Design / 2023</p>
         </div>
         <div className="card w-full">
           <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
-            <Image src={"/tc-2.png"} fill alt="test" />
+            <Image src={"/sita-cover.png"} fill alt="test" />
           </div>
-          <p>Project Title</p>
-          <p className="opacity-50">Project Catrgory</p>
+          <Link
+            href={"https://journi.site"}
+            className={cn(
+              buttonVariants({ variant: "link" }),
+              "pl-0 underline"
+            )}
+          >
+            Sita – Crafting a design system for India's biggest travel company
+          </Link>
+          <p className="opacity-50">Design Systems, Product Design / 2022</p>
         </div>
         <div className="card w-full">
           <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
-            <Image src={"/tc-3.png"} fill alt="test" />
+            <Image src={"/tt-cover.png"} fill alt="test" />
           </div>
-          <p>Project Title</p>
-          <p className="opacity-50">Project Catrgory</p>
-        </div>
-        <div className="card w-full">
-          <div className="aspect-video w-full bg-zinc-700 mb-2"></div>
-          <p>Project Title</p>
-          <p className="opacity-50">Project Catrgory</p>
-        </div>
-        <div className="card w-full">
-          <div className="aspect-video w-full bg-zinc-700 mb-2"></div>
-          <p>Project Title</p>
-          <p className="opacity-50">Project Catrgory</p>
+          <Link
+            href={"https://journi.site"}
+            className={cn(
+              buttonVariants({ variant: "link" }),
+              "pl-0 underline"
+            )}
+          >
+            TopTeen – An app to help teens find the right careers
+          </Link>
+          <p className="opacity-50">Product Design / 2022</p>
         </div>
       </div>
     </motion.section>

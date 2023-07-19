@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { FC, SyntheticEvent, useEffect, useState } from "react";
 import { buttonVariants } from "./ui/button";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
@@ -38,9 +38,11 @@ const Navigation: FC = ({}) => {
   const [offset, setOffset] = useState(0);
   useEffect(() => {
     setOffset(window.scrollY);
-    window.addEventListener("scroll", (e) => {
+    const checkIfOnTop = () => {
       setOffset(window.scrollY);
-    });
+    };
+    window.addEventListener("scroll", checkIfOnTop);
+    return () => window.removeEventListener("scroll", checkIfOnTop);
   }, []);
   return (
     <motion.nav

@@ -8,3 +8,7 @@ body,
   height: 100%;
   @apply dark:bg-zinc-950 dark:text-zinc-50 text-[16px] bg-zinc-50;
 }
+
+p {
+  @apply text-base;
+}
