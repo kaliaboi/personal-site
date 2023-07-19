@@ -110,7 +110,7 @@ export default function Home() {
                   "pl-0 underline"
                 )}
               >
-                Web's Grain
+                Web&apos;s Grain
               </Link>
               <p className="opacity-50">
                 A website remembering an iconic piece of writing

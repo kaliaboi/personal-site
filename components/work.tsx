@@ -47,7 +47,8 @@ const Work: FC = ({}) => {
               "pl-0 underline"
             )}
           >
-            Sita – Crafting a design system for India's biggest travel company
+            Sita – Crafting a design system for India&apos;s biggest travel
+            company
           </Link>
           <p className="opacity-50">Design Systems, Product Design / 2022</p>
         </div>
