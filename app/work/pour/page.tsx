@@ -277,7 +277,7 @@ const Pour: FC<pageProps> = ({}) => {
             </p>
             <div className="flex flex-wrap gap-6">
               {apps.map((app) => (
-                <TooltipProvider delayDuration={200}>
+                <TooltipProvider delayDuration={200} key={app.name}>
                   <Tooltip>
                     <TooltipTrigger className="flex flex-col items-center">
                       <div className="w-[75px] aspect-square relative hover:scale-110 transition">
