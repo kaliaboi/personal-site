@@ -53,7 +53,7 @@ const Hero: FC = ({}) => {
         delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="my-12 h-60 flex flex-col justify-center"
+      className="my-6 md:my-12 h-60 flex flex-col justify-center"
     >
       <div>
         <p className="mb-4 text-[16px] opacity-50">Hi, I&apos;m Abhishek</p>
@@ -62,7 +62,7 @@ const Hero: FC = ({}) => {
           variants={variants}
           animate={"show"}
           initial="hide"
-          className="text-[44px] font-[700] max-w-3xl leading-[115%] mb-8"
+          className="text-[28px] md:text-[44px] font-[700] max-w-3xl leading-[115%] mb-8"
         >
           {intro}
         </motion.h2>

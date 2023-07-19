@@ -8,10 +8,6 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 /**
- * TODO: Move work cards to new components
- * TODO: Make projects object
- * TODO: Make blog page
- * TODO: Add Sanity
  * TODO: Make about page
  *
  */
@@ -20,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="space-y-24 mt-48 container max-w-6xl">
+      <main className="space-y-6 md:space-y-24 mt-24 md:mt-48 container max-w-6xl">
         <Hero />
         <Work />
         <section>

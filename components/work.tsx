@@ -26,7 +26,7 @@ const Work: FC = ({}) => {
             <Image src={"/pour-2.png"} fill alt="test" />
           </div>
           <Link
-            href={"https://journi.site"}
+            href={"/work/pour"}
             className={cn(
               buttonVariants({ variant: "link" }),
               "pl-0 underline"
