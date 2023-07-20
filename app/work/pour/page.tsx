@@ -507,9 +507,9 @@ const Pour: FC<pageProps> = ({}) => {
           </div>
           <div className="relative">
             <h2>Key Screens</h2>
-            <div className="flex gap-12 mb-24 relative">
-              <div className="w-[80%] relative">
-                <div className="sticky top-44">
+            <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
+              <div className="max-w-xs md:max-w-md relative">
+                <div className="md:sticky md:top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
                     <Package />
                     Various modes
@@ -527,12 +527,12 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 rounded-[75px]"
+                  className="mt-0"
                 />
               </div>
             </div>
-            <div className="flex gap-12 mb-24 relative">
-              <div className="w-[80%] relative">
+            <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
+              <div className="max-w-xs md:max-w-md relative">
                 <div className="sticky top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
                     <MessageSquare />
@@ -551,12 +551,12 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 rounded-[75px]"
+                  className="mt-0"
                 />
               </div>
             </div>
-            <div className="flex gap-12 mb-24 relative">
-              <div className="w-[80%] relative">
+            <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
+              <div className="max-w-xs md:max-w-md relative">
                 <div className="sticky top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
                     <ListChecks />
@@ -575,12 +575,12 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 rounded-[75px]"
+                  className="mt-0"
                 />
               </div>
             </div>
-            <div className="flex gap-12 mb-24 relative">
-              <div className="w-[80%] relative">
+            <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
+              <div className="max-w-xs md:max-w-md relative">
                 <div className="sticky top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
                     <Activity />
@@ -599,7 +599,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 rounded-[75px]"
+                  className="mt-0"
                 />
               </div>
             </div>

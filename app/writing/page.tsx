@@ -15,7 +15,7 @@ export default function Home() {
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="space-y-6 md:space-y-24 mt-24 md:mt-48 container max-w-2xl text-zinc-900 dark:text-zinc-100"
+        className="space-y-6 md:space-y-12 mt-24 md:mt-48 container max-w-2xl text-zinc-900 dark:text-zinc-100"
       >
         <h1 className="text-[48px] font-bold">I write stuff</h1>
         <p className="text-[16px] opacity-50">
