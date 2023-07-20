@@ -607,9 +607,10 @@ const Pour: FC<pageProps> = ({}) => {
           <div>
             <h2>Outcomes</h2>
             <p className="text-[18px] opacity-75">
-              Since it's one of the first projects where I've worked on all ends
-              of the product design spectrum including research, I've learnt a
-              lot. Here are some nice numbers that still make me happy!
+              Since it&apos;s one of the first projects where I&apos;ve worked
+              on all ends of the product design spectrum including research,
+              I&apos;ve learnt a lot. Here are some nice numbers that still make
+              me happy!
             </p>
             <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-800 not-prose">
               <div className="border-b border-r border-zinc-800 p-6">
@@ -633,7 +634,8 @@ const Pour: FC<pageProps> = ({}) => {
               make it a real working project!
             </p>
             <p className="text-sm p-4 border border-zinc-800 mb-8">
-              💡 I'm currently building a revised version of this concept called{" "}
+              💡 I&apos;m currently building a revised version of this concept
+              called{" "}
               <Link
                 href={"https://journi.site"}
                 className={cn(buttonVariants({ variant: "link" }), "px-0")}
