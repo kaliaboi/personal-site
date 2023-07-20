@@ -647,6 +647,58 @@ const Pour: FC<pageProps> = ({}) => {
           </div>
         </div>
       </article>
+      <div className="container max-w-6xl space-y-6 my-48 prose dark:prose-invert prose-zinc">
+        <h1 className="mb-12">More work</h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="h-auto w-full border border-zinc-800 flex flex-col">
+            <div className="aspect-video w-full relative border-b border-zinc-800">
+              <Image src={"/sita-cover.png"} fill alt="test" className="mt-0" />
+            </div>
+            <div className="p-6 grow">
+              <h2 className="mt-0">Designing a CRM</h2>
+              <p className="text-[18px] opacity-75">
+                Being passionate about journaling
+              </p>
+            </div>
+            <div className="border-t border-zinc-800 p-6 h-20 flex items-center">
+              <Link
+                href="/"
+                className={cn(
+                  buttonVariants({ variant: "link", size: "lg" }),
+                  "p-0 flex gap-4"
+                )}
+              >
+                Read case study
+                <ArrowUpRight size={16} />
+              </Link>
+            </div>
+          </div>
+          <div className="h-auto w-full border border-zinc-800 flex flex-col">
+            <div className="aspect-video w-full relative border-b border-zinc-800">
+              <Image src={"/tt-cover.png"} fill alt="test" className="mt-0" />
+            </div>
+            <div className="p-6 grow">
+              <h2 className="mt-0">Helping teens find the best careers</h2>
+              <p className="text-[18px] opacity-75">
+                Being passionate about journaling
+              </p>
+            </div>
+            <div className="border-t border-zinc-800 p-6 h-20 flex items-center">
+              <Link
+                href="/"
+                className={cn(
+                  buttonVariants({ variant: "link", size: "lg" }),
+                  "p-0 flex gap-4"
+                )}
+              >
+                Read case study
+                <ArrowUpRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
