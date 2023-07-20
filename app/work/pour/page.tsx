@@ -152,7 +152,7 @@ const Pour: FC<pageProps> = ({}) => {
         </div>
       </header>
       <article className="container max-w-6xl mt-12 flex gap-6 relative">
-        <div className="toc w-72 relative hidden md:block">
+        <div className="toc w-72 relative hidden lg:block">
           <div className="sticky top-44 flex flex-col gap-2 font-bold text-sm">
             <a href="#background">Background</a>
             <a href="#background" className="pl-4 opacity-60">
@@ -180,7 +180,7 @@ const Pour: FC<pageProps> = ({}) => {
             <a href="#final">Next Steps</a>
           </div>
         </div>
-        <div className="content grow prose prose-2xl prose-zinc dark:prose-invert space-y-40 md:pl-36">
+        <div className="content grow prose prose-2xl prose-zinc dark:prose-invert space-y-32 lg:pl-36">
           <div id="background" className="scroll-mt-52">
             <h2 className="mt-0">Background</h2>
             <p className="text-[18px] opacity-75">
@@ -314,8 +314,35 @@ const Pour: FC<pageProps> = ({}) => {
             <h4>HMWs {" -> App Features"}</h4>
             <p className="text-[18px] opacity-75">
               Its time to synthesize research insights and map them to features
-              we would want in the app.
+              we would want in the app. A session of card sorting later, we have
+              the following features to focus on.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div className="aspect-square w-full relative">
+                <Image
+                  src={"/pour/hmws/hmw-1.svg"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0 p-2 border border-zinc-800"
+                />
+              </div>
+              <div className="aspect-square w-full relative">
+                <Image
+                  src={"/pour/hmws/hmw-2.svg"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0 p-2 border border-zinc-800"
+                />
+              </div>
+              <div className="aspect-square w-full relative">
+                <Image
+                  src={"/pour/hmws/hmw-3.svg"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0 p-2 border border-zinc-800"
+                />
+              </div>
+            </div>
           </div>
           <div>
             <h2>Wireframes</h2>
@@ -325,6 +352,90 @@ const Pour: FC<pageProps> = ({}) => {
               Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
               velit placeat!
             </p>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-12">
+              <div>
+                <div className="aspect-[9/16] w-full relative">
+                  <Image
+                    src={"/pour/wires/wf-1.svg"}
+                    fill
+                    alt={"HMW 1"}
+                    className="mt-0"
+                  />
+                </div>
+                <p className="text-sm pl-4 pr-8">
+                  Simple re-assuring empty states to get people started
+                </p>
+              </div>
+              <div>
+                <div className="aspect-[9/16] w-full relative">
+                  <Image
+                    src={"/pour/wires/wf-2.svg"}
+                    fill
+                    alt={"HMW 1"}
+                    className="mt-0"
+                  />
+                </div>
+                <p className="text-sm pl-4 pr-8">
+                  Selecting from a simple range of emotions to help with the
+                  guided journaling feature
+                </p>
+              </div>
+              <div>
+                <div className="aspect-[9/16] w-full relative">
+                  <Image
+                    src={"/pour/wires/wf-3.svg"}
+                    fill
+                    alt={"HMW 1"}
+                    className="mt-0"
+                  />
+                </div>
+                <p className="text-sm pl-4 pr-8">
+                  Guided journaling so people don&apos;t have to stare at an
+                  empty page
+                </p>
+              </div>
+              <div>
+                <div className="aspect-[9/16] w-full relative">
+                  <Image
+                    src={"/pour/wires/wf-4.svg"}
+                    fill
+                    alt={"HMW 1"}
+                    className="mt-0"
+                  />
+                </div>
+                <p className="text-sm pl-4 pr-8">
+                  Auto generated notes to discuss in a therapy session
+                </p>
+              </div>
+              <div>
+                <div className="aspect-[9/16] w-full relative">
+                  <Image
+                    src={"/pour/wires/wf-5.svg"}
+                    fill
+                    alt={"HMW 1"}
+                    className="mt-0"
+                  />
+                </div>
+                <p className="text-sm pl-4 pr-8">
+                  Therapist app to manage their clients and review their shared
+                  therapy notes
+                </p>
+              </div>
+              <div>
+                <div className="aspect-[9/16] w-full relative">
+                  <Image
+                    src={"/pour/wires/wf-6.svg"}
+                    fill
+                    alt={"HMW 1"}
+                    className="mt-0"
+                  />
+                </div>
+                <p className="text-sm pl-4 pr-8">
+                  Therapists can view therapy notes generated by their clients
+                  journal entries (if shared)
+                </p>
+              </div>
+            </div>
           </div>
           <div>
             <h2>The Final App</h2>
@@ -334,13 +445,139 @@ const Pour: FC<pageProps> = ({}) => {
               Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
               velit placeat!
             </p>
-            <h4>Play with the prototype</h4>
+            <h4>The final flow</h4>
             <p className="text-[18px] opacity-75">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
               eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
               Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
               velit placeat!
             </p>
+            <iframe
+              allowFullScreen
+              className="border p-2 border-zinc-800 w-full"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6OqxuyHiSj137XEola8Yn8%2FPour-Journey%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DZ5bQkVUNcdv85LLF-1"
+            ></iframe>
+            <h4>Visual identity</h4>
+            <p className="text-[18px] opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
+              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
+              velit placeat!
+            </p>
+            <div className="aspect-[12/8] w-full relative">
+              <Image
+                src={"/pour/visual/pour-icon.png"}
+                fill
+                alt={"HMW 1"}
+                className="mt-0 border p-2 border-zinc-800"
+              />
+            </div>
+            <div className="grid grid-cols-2 mt-4 gap-4">
+              <div className="aspect-square w-full relative">
+                <Image
+                  src={"/pour/visual/colors.png"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0 border p-2 border-zinc-800"
+                />
+              </div>
+              <div className="aspect-square w-full relative">
+                <Image
+                  src={"/pour/visual/fonts.svg"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0 border p-2 border-zinc-800"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <h2>Key Screens</h2>
+            <div className="flex gap-12 mb-24 relative">
+              <div className="w-[80%] relative">
+                <div className="sticky top-44">
+                  <h4 className="mt-0">Visual identity</h4>
+                  <p className="text-[18px] opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis eaque quisquam maxime tenetur quia recusandae,
+                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
+                    ipsam officia cum odit velit placeat!
+                  </p>
+                </div>
+              </div>
+              <div className="w-full aspect-[438/890] relative">
+                <Image
+                  src={"/pour/gifs/1.gif"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0"
+                />
+              </div>
+            </div>
+            <div className="flex gap-12 mb-24 relative">
+              <div className="w-[80%] relative">
+                <div className="sticky top-44">
+                  <h4 className="mt-0">Visual identity</h4>
+                  <p className="text-[18px] opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis eaque quisquam maxime tenetur quia recusandae,
+                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
+                    ipsam officia cum odit velit placeat!
+                  </p>
+                </div>
+              </div>
+              <div className="w-full aspect-[438/890] relative">
+                <Image
+                  src={"/pour/gifs/1.gif"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0"
+                />
+              </div>
+            </div>
+            <div className="flex gap-12 mb-24 relative">
+              <div className="w-[80%] relative">
+                <div className="sticky top-44">
+                  <h4 className="mt-0">Visual identity</h4>
+                  <p className="text-[18px] opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis eaque quisquam maxime tenetur quia recusandae,
+                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
+                    ipsam officia cum odit velit placeat!
+                  </p>
+                </div>
+              </div>
+              <div className="w-full aspect-[438/890] relative">
+                <Image
+                  src={"/pour/gifs/1.gif"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0"
+                />
+              </div>
+            </div>
+            <div className="flex gap-12 mb-24 relative">
+              <div className="w-[80%] relative">
+                <div className="sticky top-44">
+                  <h4 className="mt-0">Visual identity</h4>
+                  <p className="text-[18px] opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis eaque quisquam maxime tenetur quia recusandae,
+                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
+                    ipsam officia cum odit velit placeat!
+                  </p>
+                </div>
+              </div>
+              <div className="w-full aspect-[438/890] relative">
+                <Image
+                  src={"/pour/gifs/1.gif"}
+                  fill
+                  alt={"HMW 1"}
+                  className="mt-0"
+                />
+              </div>
+            </div>
           </div>
           <div>
             <h2>Outcomes</h2>
