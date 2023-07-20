@@ -1,8 +1,15 @@
-import Footer from "@/components/footer";
-import Navigation from "@/components/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import {
+  Activity,
+  ArrowLeft,
+  ArrowUpRight,
+  DotIcon,
+  ListChecks,
+  MessageSquare,
+  MessageSquareDashed,
+  Package,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -440,17 +447,25 @@ const Pour: FC<pageProps> = ({}) => {
           <div>
             <h2>The Final App</h2>
             <p className="text-[18px] opacity-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+              Presenting, Pour – an AI powered journaling app that helps people
+              in therapy get over the fear of an empty page and optimise their
+              sessions with the following features:
             </p>
+            <ul className="text-[18px] opacity-75">
+              <li>Various modes of journaling – guided, prompts, free etc.</li>
+              <li>AI powered guided journals</li>
+              <li>
+                Auto generated discussion points and summaries from entries
+              </li>
+              <li>Separate app for therapists to monitor clients</li>
+            </ul>
             <h4>The final flow</h4>
             <p className="text-[18px] opacity-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+              The folowing flow shows the complete user flow with journeys for
+              both users and therapists.
+            </p>
+            <p className="text-sm p-4 border border-zinc-800 mb-8">
+              💡 Go full screen to view this better
             </p>
             <iframe
               allowFullScreen
@@ -460,10 +475,8 @@ const Pour: FC<pageProps> = ({}) => {
             ></iframe>
             <h4>Visual identity</h4>
             <p className="text-[18px] opacity-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+              Since Pour is essentially a note taking app, I wanted the visual
+              language of the app to be as simple as possible.
             </p>
             <div className="aspect-[12/8] w-full relative">
               <Image
@@ -497,7 +510,10 @@ const Pour: FC<pageProps> = ({}) => {
             <div className="flex gap-12 mb-24 relative">
               <div className="w-[80%] relative">
                 <div className="sticky top-44">
-                  <h4 className="mt-0">Visual identity</h4>
+                  <h4 className="mt-0 flex gap-2 items-center">
+                    <Package />
+                    Various modes
+                  </h4>
                   <p className="text-[18px] opacity-75">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Veritatis eaque quisquam maxime tenetur quia recusandae,
@@ -511,14 +527,17 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0"
+                  className="mt-0 rounded-[75px]"
                 />
               </div>
             </div>
             <div className="flex gap-12 mb-24 relative">
               <div className="w-[80%] relative">
                 <div className="sticky top-44">
-                  <h4 className="mt-0">Visual identity</h4>
+                  <h4 className="mt-0 flex gap-2 items-center">
+                    <MessageSquare />
+                    Guided journaling
+                  </h4>
                   <p className="text-[18px] opacity-75">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Veritatis eaque quisquam maxime tenetur quia recusandae,
@@ -532,14 +551,17 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0"
+                  className="mt-0 rounded-[75px]"
                 />
               </div>
             </div>
             <div className="flex gap-12 mb-24 relative">
               <div className="w-[80%] relative">
                 <div className="sticky top-44">
-                  <h4 className="mt-0">Visual identity</h4>
+                  <h4 className="mt-0 flex gap-2 items-center">
+                    <ListChecks />
+                    Discussion points
+                  </h4>
                   <p className="text-[18px] opacity-75">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Veritatis eaque quisquam maxime tenetur quia recusandae,
@@ -553,14 +575,17 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0"
+                  className="mt-0 rounded-[75px]"
                 />
               </div>
             </div>
             <div className="flex gap-12 mb-24 relative">
               <div className="w-[80%] relative">
                 <div className="sticky top-44">
-                  <h4 className="mt-0">Visual identity</h4>
+                  <h4 className="mt-0 flex gap-2 items-center">
+                    <Activity />
+                    Therapist app
+                  </h4>
                   <p className="text-[18px] opacity-75">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Veritatis eaque quisquam maxime tenetur quia recusandae,
@@ -574,7 +599,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/gifs/1.gif"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0"
+                  className="mt-0 rounded-[75px]"
                 />
               </div>
             </div>
@@ -582,28 +607,40 @@ const Pour: FC<pageProps> = ({}) => {
           <div>
             <h2>Outcomes</h2>
             <p className="text-[18px] opacity-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+              Since it's one of the first projects where I've worked on all ends
+              of the product design spectrum including research, I've learnt a
+              lot. Here are some nice numbers that still make me happy!
             </p>
-          </div>
-          <div>
-            <h2>Next Steps</h2>
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-800 not-prose">
+              <div className="border-b border-r border-zinc-800 p-6">
+                <p className="text-[48px] font-black">100%</p>
+                <p className="text-[14px] opacity-60">
+                  of interviewed therapists would recommend Pour to their
+                  clients
+                </p>
+              </div>
+              <div className="border-b border-r border-zinc-800 p-6">
+                <p className="text-[48px] font-black">150+</p>
+                <p className="text-[14px] opacity-60">
+                  Signups on the interest form
+                </p>
+              </div>
+            </div>
+            <h4>Next steps</h4>
             <p className="text-[18px] opacity-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+              Being passionate about journaling and seeing the warm reception
+              for this concept I have decided to take this project forward and
+              make it a real working project!
             </p>
-          </div>
-          <div>
-            <h2>Credits</h2>
-            <p className="text-[18px] opacity-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+            <p className="text-sm p-4 border border-zinc-800 mb-8">
+              💡 I'm currently building a revised version of this concept called{" "}
+              <Link
+                href={"https://journi.site"}
+                className={cn(buttonVariants({ variant: "link" }), "px-0")}
+              >
+                Journi!
+              </Link>
+              !
             </p>
           </div>
         </div>
