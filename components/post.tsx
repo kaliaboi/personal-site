@@ -3,6 +3,10 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 import { PortableText, PortableTextComponents } from "@portabletext/react";
 import dayjs from "dayjs";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
+import { ArrowLeft } from "lucide-react";
 
 interface postlistProps {
   post: any;
@@ -11,7 +15,7 @@ interface postlistProps {
 const portableComponents: PortableTextComponents = {
   types: {},
   block: {
-    p: ({ children }) => <p className="prose text-7xl">{children}</p>,
+    p: ({ children }) => <div className="hidden">{children}</div>,
   },
 };
 
@@ -25,8 +29,15 @@ const Post: FC<postlistProps> = ({ post }) => {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="mt-24 md:mt-48 container max-w-2xl text-zinc-900 dark:text-zinc-100 prose dark:prose-invert"
+      className="mt-24 md:mt-48 container max-w-2xl text-zinc-900 dark:text-zinc-100 prose dark:prose-invert "
     >
+      <Link
+        href="/writing"
+        className={cn(buttonVariants({ variant: "link" }), "pl-0 mb-4")}
+      >
+        <ArrowLeft size={18} className="mr-2" />
+        Back to writing
+      </Link>
       <h1 className="text-[48px] font-bold mb-3">{post.name}</h1>
       <p className="mt-0">
         Published on {dayjs(post.publishDate).format("MMMM D, YYYY")}
@@ -41,7 +52,7 @@ const Post: FC<postlistProps> = ({ post }) => {
         }}
         className="mt-12"
       >
-        <div className="text-9xl">
+        <div className="text-[18px]">
           <PortableText value={post.content} components={portableComponents} />
         </div>
       </motion.div>
