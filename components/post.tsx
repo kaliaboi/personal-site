@@ -29,7 +29,7 @@ const Post: FC<postlistProps> = ({ post }) => {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="mt-24 md:mt-48 container max-w-2xl text-zinc-900 dark:text-zinc-100 prose dark:prose-invert "
+      className="mt-12 md:mt-28 lg:mt-40 container max-w-3xl text-zinc-900 dark:text-zinc-100 prose dark:prose-invert "
     >
       <Link
         href="/writing"
@@ -52,7 +52,7 @@ const Post: FC<postlistProps> = ({ post }) => {
         }}
         className="mt-12"
       >
-        <div className="text-[18px]">
+        <div className="text-[16px] prose dark:prose-invert prose-zinc">
           <PortableText value={post.content} components={portableComponents} />
         </div>
       </motion.div>

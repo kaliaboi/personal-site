@@ -14,9 +14,8 @@ const intros = [
   "I take ideas from the whiteboard to production with design and development.",
   "The frontend engineer who can transform your mundane ideas into slightly less terrible user experiences.",
   `The grand master of design, delivering creations that will leave you saying, "Hmm, I've seen worse."`,
-  "The magnificent frontend engineer who can transform your dreams into something... vaguely reminiscent of what you had in mind.",
+  "The frontend engineer who can transform your dreams into something... vaguely reminiscent of what you had in mind.",
   "The master of UI deception, capable of making your website appear far more impressive than it actually is.",
-  "The cosmic being who combines design finesse with frontend wizardry, bringing you websites that are as beautiful as they are unpredictable.",
 ];
 
 export const variants = {
@@ -53,16 +52,18 @@ const Hero: FC = ({}) => {
         delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="my-6 md:my-12 h-60 flex flex-col justify-center"
+      className="my-8 pt-4 md:pt-0 md:my-12 h-60 flex flex-col justify-center"
     >
       <div>
-        <p className="mb-4 text-[16px] opacity-50">Hi, I&apos;m Abhishek</p>
+        <p className="mb-4 text-[16px] opacity-80 dark:opacity-50">
+          Hi, I&apos;m Abhishek
+        </p>
         <motion.h2
           key={intro}
           variants={variants}
           animate={"show"}
           initial="hide"
-          className="text-[28px] md:text-[44px] font-[700] max-w-3xl leading-[115%] mb-8"
+          className="text-[24px] md:text-[44px] font-[700] max-w-3xl leading-[115%] mb-8"
         >
           {intro}
         </motion.h2>

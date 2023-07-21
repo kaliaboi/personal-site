@@ -88,7 +88,7 @@ const Navigation: FC = ({}) => {
                   href={link.href}
                   className={cn(
                     buttonVariants({ variant: "link" }),
-                    "text-base dark:text-zinc-50 underline-offset-8 h-28"
+                    "text-[16px] dark:text-zinc-50 h-24 font-[400] hover:no-underline border-b-2 border-zinc-50/0 hover:border-b-2 hover:border-zinc-800 dark:hover:border-b-2 dark:hover:border-zinc-50 rounded-none no-underline"
                   )}
                 >
                   {link.title}
@@ -109,7 +109,7 @@ const Navigation: FC = ({}) => {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <Separator className="opacity-60" />
+        <Separator />
       </div>
     </motion.nav>
   );

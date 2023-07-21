@@ -28,7 +28,7 @@ const Work: FC = ({}) => {
             </div>
             <p>Pour – A journalling app for people in therapy</p>
 
-            <p className="opacity-50">Product Design / 2023</p>
+            <p className="opacity-60 dark:opacity-50">Product Design / 2023</p>
           </Link>
         </div>
 
@@ -37,9 +37,14 @@ const Work: FC = ({}) => {
             <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
               <Image src={"/sita-cover.png"} fill alt="test" />
             </div>
-            Sita – Crafting a design system for India&apos;s biggest travel
-            company
-            <p className="opacity-50">Design Systems, Product Design / 2022</p>
+            <p className="w-full">
+              Sita – Crafting a design system for India&apos;s biggest travel
+              company
+            </p>
+
+            <p className="opacity-60 dark:opacity-50">
+              Design Systems, Product Design / 2022
+            </p>
           </Link>
         </div>
 
@@ -48,8 +53,8 @@ const Work: FC = ({}) => {
             <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
               <Image src={"/tt-cover.png"} fill alt="test" />
             </div>
-            TopTeen – An app to help teens find the right careers
-            <p className="opacity-50">Product Design / 2022</p>
+            <p>TopTeen – An app to help teens find the right careers</p>
+            <p className="opacity-60 dark:opacity-50">Product Design / 2022</p>
           </Link>
         </div>
       </div>

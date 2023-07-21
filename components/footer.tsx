@@ -20,7 +20,7 @@ import {
 export default function Footer() {
   return (
     <footer className="mt-12 h-64 container max-w-6xl">
-      <Separator className="opacity-60" />
+      <Separator className="opacity-100 dark:opacity-60" />
       <div className="mt-12 flex flex-col-reverse md:flex-row gap-16 justify-between">
         <div className="flex flex-col justify-between gap-6">
           <div>

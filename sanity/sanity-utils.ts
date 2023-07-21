@@ -51,7 +51,7 @@ export async function getProject(slug: string) {
 
 export async function getPosts() {
   const posts = await sanityClient.fetch(
-    groq`*[_type == "article"]{
+    groq`*[_type == "article"] | order(publishDate desc){
             _id,
             _createdAt,
             name,
