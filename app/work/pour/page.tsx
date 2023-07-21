@@ -89,13 +89,13 @@ const Pour: FC<pageProps> = ({}) => {
               <p className="text-[14px] opacity-80 dark:opacity-60 pb-4">
                 Intro
               </p>
-              <p className="leading-6 text-[16px]">
+              <p className="leading-6 text-[18px]">
                 According to my research most people who don&apos;t journal,
                 don&apos;t do it because of how daunting an empty page seems.
                 Those who do, derive a lot of value from it. Therapists often
                 recommend journalig as an activity.
               </p>
-              <p className="leading-6 text-[16px]">
+              <p className="leading-6 text-[18px]">
                 Pour is an AI powered journal that helps you express your
                 emotions easily with the help of guided journaling and prompts.
                 It also has a toolset to connect your journal to your therapy
@@ -105,23 +105,23 @@ const Pour: FC<pageProps> = ({}) => {
             <div className="details text-sm border-r border-zinc-300 dark:border-zinc-800 flex flex-col">
               <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">Scope</p>
-                <p className="text-[16px] font-medium">Capstone project</p>
+                <p className="text-[18px] font-medium">Capstone project</p>
               </div>
               <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">Period</p>
-                <p className="text-[16px] font-medium">
+                <p className="text-[18px] font-medium">
                   January, 2023 – May, 2023
                 </p>
               </div>
               <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">Team</p>
-                <p className="text-[16px] font-medium">Solo project</p>
+                <p className="text-[18px] font-medium">Solo project</p>
               </div>
               <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">
                   My Role
                 </p>
-                <p className="text-[16px] font-medium">
+                <p className="text-[18px] font-medium">
                   UX Research, UI Design
                 </p>
               </div>
@@ -129,7 +129,7 @@ const Pour: FC<pageProps> = ({}) => {
                 <p className="text-[14px] opacity-80 dark:opacity-60">
                   Key Deliverables
                 </p>
-                <p className="text-[16px] font-medium">
+                <p className="text-[18px] font-medium">
                   Research, Wireframes, Prototype
                 </p>
               </div>

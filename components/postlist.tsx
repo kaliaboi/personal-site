@@ -20,8 +20,8 @@ const PostList: FC<postlistProps> = ({ posts }) => {
       }}
       className="mt-24 md:mt-32 lg:mt-40 container max-w-2xl text-zinc-900 dark:text-zinc-100"
     >
-      <h1 className="text-[48px] font-bold">I write stuff</h1>
-      <p className="text-[16px] opacity-70 dark:opacity-50">
+      <h1 className="text-[48px] font-bold mb-2">Notebook</h1>
+      <p className="text-[16px] opacity-70 dark:opacity-50 max-w-xl">
         This is a space I use to document my learning in prose. You can find
         pieces on product design, development and anything tech related – you
         name it. I sometimes even love writing about the video games I am
@@ -42,7 +42,7 @@ const PostList: FC<postlistProps> = ({ posts }) => {
             <p className="text-[14px] opacity-70 dark:opacity-50 mb-1">
               {dayjs(post.publishDate).format("MMMM D, YYYY")}
             </p>
-            <h2 className="text-[28px] font-extrabold mb-2">{post.name}</h2>
+            <h2 className="text-[28px] font-extrabold mb-1">{post.name}</h2>
             <p className="text-[16px] opacity-70 dark:opacity-50">
               {post.description}
             </p>
