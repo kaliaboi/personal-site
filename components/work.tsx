@@ -22,50 +22,35 @@ const Work: FC = ({}) => {
       <p className="mb-4 font-bold text-[12px]">SELECTED WORK</p>
       <div className="grid grid-cols-1 gap-16 w-full">
         <div className="card w-full">
-          <div className="aspect-video w-full mb-2 relative">
-            <Image src={"/pour-2.png"} fill alt="test" />
-          </div>
-          <Link
-            href={"/work/pour"}
-            className={cn(
-              buttonVariants({ variant: "link" }),
-              "pl-0 underline"
-            )}
-          >
-            Pour – A journalling app for people in therapy
+          <Link href={"/work/pour"}>
+            <div className="aspect-video w-full mb-2 relative">
+              <Image src={"/pour-2.png"} fill alt="test" />
+            </div>
+            <p>Pour – A journalling app for people in therapy</p>
+
+            <p className="opacity-50">Product Design / 2023</p>
           </Link>
-          <p className="opacity-50">Product Design / 2023</p>
         </div>
+
         <div className="card w-full">
-          <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
-            <Image src={"/sita-cover.png"} fill alt="test" />
-          </div>
-          <Link
-            href={"https://journi.site"}
-            className={cn(
-              buttonVariants({ variant: "link" }),
-              "pl-0 underline"
-            )}
-          >
+          <Link href={"/work/sita"}>
+            <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
+              <Image src={"/sita-cover.png"} fill alt="test" />
+            </div>
             Sita – Crafting a design system for India&apos;s biggest travel
             company
+            <p className="opacity-50">Design Systems, Product Design / 2022</p>
           </Link>
-          <p className="opacity-50">Design Systems, Product Design / 2022</p>
         </div>
+
         <div className="card w-full">
-          <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
-            <Image src={"/tt-cover.png"} fill alt="test" />
-          </div>
-          <Link
-            href={"https://journi.site"}
-            className={cn(
-              buttonVariants({ variant: "link" }),
-              "pl-0 underline"
-            )}
-          >
+          <Link href={"/work/topteen"}>
+            <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
+              <Image src={"/tt-cover.png"} fill alt="test" />
+            </div>
             TopTeen – An app to help teens find the right careers
+            <p className="opacity-50">Product Design / 2022</p>
           </Link>
-          <p className="opacity-50">Product Design / 2022</p>
         </div>
       </div>
     </motion.section>
