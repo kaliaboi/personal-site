@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        base: "14px",
+        base: "18px",
       },
       keyframes: {
         "accordion-down": {

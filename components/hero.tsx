@@ -55,7 +55,7 @@ const Hero: FC = ({}) => {
       className="my-8 pt-4 md:pt-0 md:my-12 h-60 flex flex-col justify-center"
     >
       <div>
-        <p className="mb-4 text-[16px] opacity-80 dark:opacity-50">
+        <p className="mb-4 text-[18px] opacity-80 dark:opacity-50">
           Hi, I&apos;m Abhishek
         </p>
         <motion.h2
