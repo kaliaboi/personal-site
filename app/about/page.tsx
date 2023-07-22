@@ -102,7 +102,7 @@ export default function Home() {
           <div className="mt-6 prose dark:prose-invert">
             <h2 className="mb-2">Get in touch</h2>
             <p className="mt-0">
-              Let's talk about video games, code and our mutual disdain for
+              Let&apos;s talk about video games, code and our mutual disdain for
               ketchup.
             </p>
             <div className="mt-12 flex flex-row w-full flex-wrap gap-8">
