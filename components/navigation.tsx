@@ -81,7 +81,7 @@ const Navigation: FC = ({}) => {
               <p className="opacity-50">Product Designer, Frontend Developer</p>
             </span>
           </a>
-          <ul className="gap-4 lg:flex hidden">
+          <ul className="gap-4 md:flex hidden">
             {links.map((link) => (
               <li key={link.title}>
                 <Link
@@ -97,7 +97,7 @@ const Navigation: FC = ({}) => {
             ))}
           </ul>
           <DropdownMenu>
-            <DropdownMenuTrigger className="block lg:hidden border border-zinc-50/20 p-2 rounded-lg">
+            <DropdownMenuTrigger className="block md:hidden border border-zinc-50/20 p-2 rounded-lg">
               <MenuIcon />
             </DropdownMenuTrigger>
             <DropdownMenuContent>

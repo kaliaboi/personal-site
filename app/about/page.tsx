@@ -1,7 +1,10 @@
 "use client";
 import Footer from "@/components/footer";
 import Navigation from "@/components/navigation";
+import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import { Separator } from "@radix-ui/react-separator";
 import { motion } from "framer-motion";
+import { ArrowRight, ArrowUpRight, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +28,7 @@ export default function Home() {
               <div className="aspect-[6/8] w-full bg-zinc-800 relative">
                 <Image src={"/about/1.png"} fill alt="" />
               </div>
-              <p className="text-sm mt-2">This is how look on good days</p>
+              <p className="text-sm mt-2">This is how I look on good days</p>
             </div>
             <div>
               <div className="aspect-square w-full bg-zinc-800 relative">
@@ -88,6 +91,38 @@ export default function Home() {
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
                 ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mt-12 border-t border-zinc-600 dark:border-zinc-800"
+          id="contact"
+        >
+          <div className="mt-6 prose dark:prose-invert">
+            <h2 className="mb-2">Get in touch</h2>
+            <p className="mt-0">
+              Let's talk about video games, code and our mutual disdain for
+              ketchup.
+            </p>
+            <div className="mt-12 flex flex-row w-full flex-wrap gap-8">
+              <div className="flex flex-col gap-1">
+                <Mail />
+                <p className="my-0 flex gap-1 items-center">
+                  Email <ArrowUpRight size={16} />
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <LinkedInLogoIcon width={24} height={24} />
+                <p className="my-0 flex gap-1 items-center">
+                  LinkedIn <ArrowUpRight size={16} />
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <TwitterLogoIcon width={24} height={24} />
+                <p className="my-0 flex gap-1 items-center">
+                  Twitter <ArrowUpRight size={16} />
+                </p>
               </div>
             </div>
           </div>
