@@ -49,9 +49,9 @@ export default function Home() {
               <p>
                 I majored in <strong>Computer Science</strong> as an undergrad
                 at <strong>SRM University</strong> and tried to start a company
-                right after (which didn't work out). So I worked as a frontend
-                developer for a couple of years before I switched to the world
-                of product design, working at{" "}
+                right after (which didn&apos;t work out). So I worked as a
+                frontend developer for a couple of years before I switched to
+                the world of product design, working at{" "}
                 <Link href="https://grappus.com">Grappus</Link>.
               </p>
               <p>
@@ -67,17 +67,17 @@ export default function Home() {
               <div>
                 <h2 className="mt-12">Outside Work</h2>
                 <p>
-                  I'm glued to my Macbook most of the time but when I'm not -
-                  you can find me helping puppies find homes at{" "}
+                  I&apos;m glued to my Macbook most of the time but when
+                  I&apos;m not - you can find me helping puppies find homes at{" "}
                   <Link href="https://www.muddypawsrescue.org/">
                     Muddy Paws Rescue
                   </Link>{" "}
                   near Flatiron and playing (and sucking at) pickleball.
                 </p>
                 <p>
-                  I'm also a big fan of pregressive indie music (all kinds of
-                  music actually), check out some of my pfavourite songs on this
-                  playlist.
+                  I&apos;m also a big fan of pregressive indie music (all kinds
+                  of music actually), check out some of my pfavourite songs on
+                  this playlist.
                 </p>
                 <iframe
                   className="mt-11"
