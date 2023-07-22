@@ -22,8 +22,9 @@ export default function Home() {
         <Work />
         <section>
           <p className="mb-8 mt-24 font-bold text-[24px]">Side Projects</p>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-6 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 ">
             <div>
+              <div className="aspect-video w-full bg-zinc-700"></div>
               <Link
                 href={"https://journi.site"}
                 className={cn(
@@ -39,6 +40,7 @@ export default function Home() {
               </p>
             </div>
             <div>
+              <div className="aspect-video w-full bg-zinc-700"></div>
               <Link
                 href={"https://journi.site"}
                 className={cn(
@@ -69,6 +71,7 @@ export default function Home() {
               </p>
             </div> */}
             <div>
+              <div className="aspect-video w-full bg-zinc-700"></div>
               <Link
                 href={"https://journi.site"}
                 className={cn(
@@ -96,6 +99,7 @@ export default function Home() {
               <p className="opacity-50">A simple code paste and share tool</p>
             </div> */}
             <div>
+              <div className="aspect-video w-full bg-zinc-700"></div>
               <Link
                 href={"https://journi.site"}
                 className={cn(

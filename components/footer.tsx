@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-6">
           <div>
             <p className="text-base">Abhishek.</p>
-            <p className="opacity-50">No rights to reserve</p>
+            <p className="opacity-50">I made this website myself.</p>
           </div>
           <div className="w-[48px] h-[48px] rounded-full relative">
             <Image

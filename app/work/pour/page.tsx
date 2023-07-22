@@ -600,12 +600,13 @@ const Pour: FC<pageProps> = ({}) => {
                   </p>
                 </div>
               </div>
-              <div className="w-full aspect-[438/890] relative">
-                <Image
-                  src={"/pour/gifs/1.gif"}
-                  fill
-                  alt={"HMW 1"}
+              <div className="w-full aspect-[438/890]">
+                <video
+                  src={"/test-video.mp4"}
                   className="mt-0"
+                  muted
+                  autoPlay
+                  loop
                 />
               </div>
             </div>
