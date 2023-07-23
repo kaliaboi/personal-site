@@ -1,10 +1,10 @@
 "use client";
+
 import Footer from "@/components/footer";
 import Navigation from "@/components/navigation";
 import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
-import { Separator } from "@radix-ui/react-separator";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -83,7 +83,7 @@ export default function Home() {
                   this playlist.
                 </p>
                 <iframe
-                  className="mt-11"
+                  className="spotify mt-11"
                   src="https://open.spotify.com/embed/playlist/63IBUBl7cOyIAhCS1P9nNL?utm_source=generator&theme=0"
                   width="100%"
                   height="352"
