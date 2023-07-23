@@ -1,65 +1,11 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import {
-  Activity,
-  ArrowLeft,
-  ArrowUpRight,
-  DotIcon,
-  ListChecks,
-  MessageSquare,
-  MessageSquareDashed,
-  Package,
-} from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 interface pageProps {}
-
-const apps = [
-  {
-    name: "How We Feel",
-    remarks: "Categorization of emotions",
-    icon: "/pour/apps/hwf.png",
-    screen: "/pour/apps/screens/hwf.png",
-  },
-  {
-    name: "Calm",
-    remarks: "Meditation UI",
-    icon: "/pour/apps/caml.png",
-    screen: "/pour/apps/screens/calm.png",
-  },
-  {
-    name: "Alan Mind",
-    remarks: "Guided journaling modules",
-    icon: "/pour/apps/alan.png",
-    screen: "/pour/apps/screens/alan.png",
-  },
-  {
-    name: "Co-Star",
-    remarks: "Calendar element",
-    icon: "/pour/apps/costar.png",
-    screen: "/pour/apps/screens/costar.png",
-  },
-  {
-    name: "Craft",
-    remarks: "Notes UI",
-    icon: "/pour/apps/craft.png",
-    screen: "/pour/apps/screens/craft.png",
-  },
-  {
-    name: "Clover",
-    remarks: "Notes UI",
-    icon: "/pour/apps/clover.png",
-    screen: "/pour/apps/screens/clover.png",
-  },
-];
 
 const Pour: FC<pageProps> = ({}) => {
   return (
@@ -158,47 +104,151 @@ const Pour: FC<pageProps> = ({}) => {
           <div className="sticky top-44 flex flex-col gap-2 font-bold text-sm">
             <a href="#background">Background</a>
             <a href="#background" className="pl-4 opacity-60">
-              Why Journaling
+              The Problem
             </a>
-            <a href="#research">Research</a>
+            <a href="#research">Opportunities</a>
             <a href="#background" className="pl-4 opacity-60">
-              Desk
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Competetive
+              Visual Appeal
             </a>
             <a href="#background" className="pl-4 opacity-60">
-              HMWs
+              Interactiveness
             </a>
             <a href="#background" className="pl-4 opacity-60">
-              Desk
+              Engaging content
             </a>
-            <a href="#wireframes">Wireframes</a>
-            <a href="#final">Final App</a>
             <a href="#background" className="pl-4 opacity-60">
-              Prototype
+              Social relatability
+            </a>
+            <a href="#background" className="pl-4 opacity-60">
+              Fun quizzes
+            </a>
+            <a href="#wireframes">Design Work</a>
+            <a href="#background" className="pl-4 opacity-60">
+              Planning
+            </a>
+            <a href="#background" className="pl-4 opacity-60">
+              Desigining
+            </a>
+            <a href="#background" className="pl-4 opacity-60">
+              Prototyping
             </a>
             <a href="#final">Outcomes</a>
-            <a href="#final">Next Steps</a>
           </div>
         </div>
         <div className="content grow prose prose-2xl prose-zinc dark:prose-invert space-y-32 lg:pl-36">
           <div id="background" className="scroll-mt-52">
             <h2 className="mt-0">Background</h2>
             <p className="text-[18px] opacity-75">
-              This project was my capstone project submission for my grad degree
-              in proeduct design at{" "}
-              <Link
-                href="https://www.newschool.edu/parsons/"
-                className="underline-offset-4"
-              >
-                Parsons School of Design.
-              </Link>{" "}
-              This was a 5 month long project where I worked as a solo UX
-              Researcher, UI Designer and eventually even full stack developer.
-              This project earned me an <strong>honours degree</strong> and
-              ended up being a <strong>featured project</strong>!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              consectetur inventore, voluptas eos dolores magni repellat placeat
+              nostrum ducimus error quidem eum maxime pariatur sapiente
+              repellendus, iusto veritatis odit voluptate?
             </p>
+            <h4>The Problem</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              exercitationem consectetur deserunt et doloribus nulla inventore
+              natus modi cumque possimus voluptatum ea corporis, sequi explicabo
+              quisquam alias voluptates dolorem laudantium. .
+            </p>
+          </div>
+          <div id="research" className="scroll-mt-52">
+            <h2>Opportunities</h2>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Before launching Figma, I had to figure out what I will design.
+              The goal of the research step was to figure out why (and why
+              don&apos;t) people journal, how therapists use journaling as a
+              tool and some of the existing tools in the market.
+            </p>
+            <h4>Visual Appeal</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+            <h4>Interactiveness</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+            <h4>Engaging content</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+            <h4>Social Relatability</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+            <h4>Fun Quizzes</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+          </div>
+          <div id="research" className="scroll-mt-52">
+            <h2>Design Work</h2>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Before launching Figma, I had to figure out what I will design.
+              The goal of the research step was to figure out why (and why
+              don&apos;t) people journal, how therapists use journaling as a
+              tool and some of the existing tools in the market.
+            </p>
+            <h4>Planing</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+            <h4>UI Design</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+            <h4>Prototyping</h4>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis deleniti sequi ea doloribus nulla tenetur
+              veniam omnis fugit eveniet. Ipsa beatae autem eligendi architecto
+              temporibus ipsam harum animi officia.
+            </p>
+          </div>
+          <div>
+            <h2>Outcomes</h2>
+            <p className="text-[18px] opacity-90 dark:opacity-75">
+              Since it&apos;s one of the first projects where I&apos;ve worked
+              on all ends of the product design spectrum including research,
+              I&apos;ve learnt a lot. Here are some nice numbers that still make
+              me happy!
+            </p>
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-300 dark:border-zinc-800 not-prose">
+              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+                <p className="text-[48px] font-black">100%</p>
+                <p className="text-[14px] opacity-100 dark:opacity-60">
+                  of interviewed therapists would recommend Pour to their
+                  clients
+                </p>
+              </div>
+              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+                <p className="text-[48px] font-black">150+</p>
+                <p className="text-[14px] opacity-100 dark:opacity-60">
+                  Signups on the interest form
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </article>

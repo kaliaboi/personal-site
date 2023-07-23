@@ -38,8 +38,8 @@ const Work: FC = ({}) => {
               <Image src={"/sita-cover.png"} fill alt="test" />
             </div>
             <p className="w-full">
-              Sita – Crafting a design system for India&apos;s biggest travel
-              company
+              Sita – Crafting parts of a design system for India&apos;s biggest
+              travel company
             </p>
 
             <p className="opacity-60 dark:opacity-50">
