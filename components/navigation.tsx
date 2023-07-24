@@ -53,7 +53,7 @@ const Navigation: FC = ({}) => {
         delay: 1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="dark:bg-zinc-950 bg-zinc-50 fixed w-full z-20 top-0 left-0 font-[200]"
+      className="dark:bg-zinc-950 bg-zinc-50 fixed w-full z-20 top-0 left-0 font-[200] shadow-sm"
     >
       <div className="container max-w-6xl">
         <div className="flex items-center justify-between">
@@ -109,7 +109,7 @@ const Navigation: FC = ({}) => {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <Separator />
+        <Separator className="hidden dark:block" />
       </div>
     </motion.nav>
   );

@@ -305,13 +305,13 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="w-full aspect-[438/890]">
                   <video
                     src={"/tt/videos/onboarding.mp4"}
-                    className="my-0"
+                    className="my-0 p-2 border dark:p-0 dark:border-none shadow-sm"
                     muted
                     autoPlay
                     loop
                   />
                 </div>
-                <h4 className="mt-8">Fun Onboarding</h4>
+                <h4 className="mt-2 dark:mt-8">Fun Onboarding</h4>
                 <p className="text-[18px] opacity-90 dark:opacity-75">
                   To make the long onboarding process more fun, we made it
                   stepped and added fun features like swiping left or right to
@@ -322,13 +322,13 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="w-full aspect-[438/890]">
                   <video
                     src={"/tt/videos/careerdiscovery.mp4"}
-                    className="my-0"
+                    className="my-0 p-2 border dark:p-0 dark:border-none shadow-sm"
                     muted
                     autoPlay
                     loop
                   />
                 </div>
-                <h4 className="mt-8">Career Discovery</h4>
+                <h4 className="mt-2 dark:mt-8">Career Discovery</h4>
                 <p className="text-[18px] opacity-90 dark:opacity-75">
                   TopTeen uses an academic qualitative pyschometric quiz to
                   figure out the best career options for the user. The quiz is
@@ -340,13 +340,13 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="w-full aspect-[438/890]">
                   <video
                     src={"/tt/videos/familiar.mp4"}
-                    className="my-0"
+                    className="my-0 p-2 border dark:p-0 dark:border-none shadow-sm"
                     muted
                     autoPlay
                     loop
                   />
                 </div>
-                <h4 className="mt-8">Familiar Patterns</h4>
+                <h4 className="mt-2 dark:mt-8">Familiar Patterns</h4>
                 <p className="text-[18px] opacity-90 dark:opacity-75">
                   Since our target audience was mainly teens who are heavy users
                   of social media, we decided to use familiar patterns like
@@ -357,13 +357,13 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="w-full aspect-[438/890]">
                   <video
                     src={"/tt/videos/gamification.mp4"}
-                    className="my-0"
+                    className="my-0 p-2 border dark:p-0 dark:border-none shadow-sm"
                     muted
                     autoPlay
                     loop
                   />
                 </div>
-                <h4 className="mt-8">Gamification Features</h4>
+                <h4 className="mt-2 dark:mt-8">Gamification Features</h4>
                 <p className="text-[18px] opacity-90 dark:opacity-75">
                   To retain users, we added gamification features like badges
                   and trophies to the app. Users can also compete with their
@@ -374,13 +374,13 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="w-full aspect-[438/890]">
                   <video
                     src={"/tt/videos/content.mp4"}
-                    className="my-0"
+                    className="my-0 p-2 border dark:p-0 dark:border-none shadow-sm"
                     muted
                     autoPlay
                     loop
                   />
                 </div>
-                <h4 className="mt-8">Engaging Content</h4>
+                <h4 className="mt-2 dark:mt-8">Engaging Content</h4>
                 <p className="text-[18px] opacity-90 dark:opacity-75">
                   The feed is full of engaging content like quizzes, polls and
                   articles. Users can also share their own content with the
@@ -391,13 +391,13 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="w-full aspect-[438/890]">
                   <video
                     src={"/tt/videos/additional.mp4"}
-                    className="my-0"
+                    className="my-0 p-2 border dark:p-0 dark:border-none shadow-sm"
                     muted
                     autoPlay
                     loop
                   />
                 </div>
-                <h4 className="mt-8">Additional Tools</h4>
+                <h4 className="mt-2 dark:mt-8">Additional Tools</h4>
                 <p className="text-[18px] opacity-90 dark:opacity-75">
                   To provide teens with continued value, TopTeen also has an
                   extensive set of additonal tools like a resume builder,
