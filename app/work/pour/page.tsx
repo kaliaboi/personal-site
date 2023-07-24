@@ -8,6 +8,7 @@ import {
   ListChecks,
   MessageSquare,
   MessageSquareDashed,
+  Minus,
   Package,
 } from "lucide-react";
 import Image from "next/image";
@@ -165,32 +166,71 @@ const Pour: FC<pageProps> = ({}) => {
         </div>
       </header>
       <article className="container max-w-6xl mt-12 flex gap-6 relative">
-        <div className="toc w-72 relative hidden lg:block">
-          <div className="sticky top-44 flex flex-col gap-2 font-bold text-sm">
-            <a href="#background">Background</a>
-            <a href="#background" className="pl-4 opacity-80 dark:opacity-60">
-              Why Journaling
-            </a>
-            <a href="#research">Research</a>
-            <a href="#background" className="pl-4 opacity-80 dark:opacity-60">
-              Desk
-            </a>
-            <a href="#background" className="pl-4 opacity-80 dark:opacity-60">
-              Competetive
-            </a>
-            <a href="#background" className="pl-4 opacity-80 dark:opacity-60">
-              HMWs
-            </a>
-            <a href="#background" className="pl-4 opacity-80 dark:opacity-60">
-              Desk
-            </a>
+        <div className="toc w-[36rem] relative hidden lg:block">
+          <div className="sticky top-44 flex flex-col gap-4 font-medium text-sm">
+            <div className="flex flex-col gap-1">
+              <a href="#background">Background</a>
+              <a
+                href="#why"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                Why Journaling
+              </a>
+            </div>
+            <div className="flex flex-col gap-1">
+              <a href="#research">Research</a>
+              <a
+                href="#interviews"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                Interviews
+              </a>
+              <a
+                href="#competetive"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                Competetive Landscape
+              </a>
+              <a
+                href="#features"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                App Features
+              </a>
+            </div>
             <a href="#wireframes">Wireframes</a>
-            <a href="#final">Final App</a>
-            <a href="#background" className="pl-4 opacity-80 dark:opacity-60">
-              Prototype
-            </a>
-            <a href="#final">Outcomes</a>
-            <a href="#final">Next Steps</a>
+            <div className="flex flex-col gap-1">
+              <a href="#final">The Final App</a>
+              <a
+                href="#flow"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                Final Flow
+              </a>
+              <a
+                href="#visual"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                Visual Identity
+              </a>
+            </div>
+            <a href="#key">Key Screens</a>
+            <div className="flex flex-col gap-1">
+              <a href="#outcomes">Outcome</a>
+              <a
+                href="#next"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                Next Steps
+              </a>
+            </div>
           </div>
         </div>
         <div className="content grow prose prose-2xl prose-zinc dark:prose-invert space-y-32 lg:pl-36">
@@ -210,7 +250,9 @@ const Pour: FC<pageProps> = ({}) => {
               This project earned me an <strong>honours degree</strong> and
               ended up being a <strong>featured project</strong>!
             </p>
-            <h4>Why Journaling?</h4>
+            <h4 id="why" className="scroll-mt-52">
+              Why Journaling?
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               I was introduced to journaling as a medium of expression when I
               started therapy. Since then, it has helped me immensely and I
@@ -227,13 +269,17 @@ const Pour: FC<pageProps> = ({}) => {
               don&apos;t) people journal, how therapists use journaling as a
               tool and some of the existing tools in the market.
             </p>
-            <h3>Interviews</h3>
+            <h3 id="interviews" className="scroll-mt-52">
+              Interviews
+            </h3>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               I condeucted qualitative discussions with 7 people with varying
               levels of journaling experience and 2 therapists about why and how
               they journal and if they don’t what’s been the blockers if any
             </p>
-            <h4 className="pb-4">Insights</h4>
+            <h4 id="insights" className="pb-4 scroll-mt-52">
+              Insights
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               The qualitative interviews led to some interesting takeaways and I
               could see the strong connecting between therapy and journaling.
@@ -278,7 +324,9 @@ const Pour: FC<pageProps> = ({}) => {
                 </p>
               </div>
             </div>
-            <h4>Competitive Landscape</h4>
+            <h4 id="competetive" className="scroll-mt-52">
+              Competitive Landscape
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               I studied some apps that exists in the journaling, mental health
               and note-taking categories. My goal with this step was to
@@ -324,7 +372,9 @@ const Pour: FC<pageProps> = ({}) => {
                 </TooltipProvider>
               ))}
             </div>
-            <h4>HMWs {" -> App Features"}</h4>
+            <h4 id="features" className="scroll-mt-52">
+              HMWs {" -> App Features"}
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               Its time to synthesize research insights and map them to features
               we would want in the app. A session of card sorting later, we have
@@ -357,7 +407,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div id="wireframes" className="scroll-mt-52">
             <h2>Wireframes</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -450,7 +500,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div id="final" className="scroll-mt-52">
             <h2>The Final App</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               Presenting, Pour – an AI powered journaling app that helps people
@@ -465,7 +515,9 @@ const Pour: FC<pageProps> = ({}) => {
               </li>
               <li>Separate app for therapists to monitor clients</li>
             </ul>
-            <h4>The final flow</h4>
+            <h4 id="flow" className="scroll-mt-52">
+              The final flow
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               The folowing flow shows the complete user flow with journeys for
               both users and therapists.
@@ -479,7 +531,9 @@ const Pour: FC<pageProps> = ({}) => {
               height="450"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6OqxuyHiSj137XEola8Yn8%2FPour-Journey%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DZ5bQkVUNcdv85LLF-1"
             ></iframe>
-            <h4>Visual identity</h4>
+            <h4 id="visual" className="scroll-mt-52">
+              Visual identity
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               Since Pour is essentially a note taking app, I wanted the visual
               language of the app to be as simple as possible.
@@ -511,7 +565,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div id="key" className="relative scroll-mt-52">
             <h2>Key Screens</h2>
             <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
               <div className="max-w-xs md:max-w-md relative">
@@ -611,7 +665,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div id="outcomes" className="scroll-mt-52">
             <h2>Outcomes</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               Since it&apos;s one of the first projects where I&apos;ve worked
@@ -634,7 +688,9 @@ const Pour: FC<pageProps> = ({}) => {
                 </p>
               </div>
             </div>
-            <h4>Next steps</h4>
+            <h4 id="next" className="scroll-mt-52">
+              Next steps
+            </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               Being passionate about journaling and seeing the warm reception
               for this concept I have decided to take this project forward and
