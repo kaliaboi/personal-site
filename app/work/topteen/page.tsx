@@ -8,6 +8,7 @@ import {
   Gamepad,
   Layers,
   MagnetIcon,
+  Minus,
   ScanFace,
   Wand,
 } from "lucide-react";
@@ -105,10 +106,12 @@ const Pour: FC<pageProps> = ({}) => {
           </div>
           <div className="w-full border-t border-zinc-800 p-6">
             <Link
-              href={"google.com"}
+              href={
+                "https://www.figma.com/proto/UEoGKQQ1iURwMsiAjE5rVu/TopTeen-Prototype?page-id=0%3A1&type=design&node-id=1-8276&viewport=10989%2C1505%2C0.42&t=bkKio86reYOOj9Yj-1&scaling=scale-down&starting-point-node-id=1%3A8276&mode=design"
+              }
               className={cn(
                 buttonVariants({ variant: "link", size: "lg" }),
-                "pl-0 text-[18px] font-bold w-fit flex items-center gap-2"
+                "pl-0 text-[16px] font-bold w-fit flex items-center gap-2"
               )}
             >
               View Interactive Prototype
@@ -118,45 +121,29 @@ const Pour: FC<pageProps> = ({}) => {
         </div>
       </header>
       <article className="container max-w-6xl mt-12 flex gap-6 relative">
-        <div className="toc w-72 relative hidden lg:block">
-          <div className="sticky top-44 flex flex-col gap-2 font-bold text-sm">
-            <a href="#background">Background</a>
-            <a href="#background" className="pl-4 opacity-60">
-              The Problem
-            </a>
-            <a href="#research">Opportunities</a>
-            <a href="#background" className="pl-4 opacity-60">
-              Visual Appeal
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Interactiveness
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Engaging content
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Social relatability
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Fun quizzes
-            </a>
-            <a href="#wireframes">Design Work</a>
-            <a href="#background" className="pl-4 opacity-60">
-              Planning
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Desigining
-            </a>
-            <a href="#background" className="pl-4 opacity-60">
-              Prototyping
-            </a>
-            <a href="#final">Outcomes</a>
+        <div className="toc w-[36rem] relative hidden lg:block">
+          <div className="sticky top-44 flex flex-col gap-4 font-medium text-sm">
+            <div className="flex flex-col gap-1">
+              <a href="#background">Background</a>
+              <a
+                href="#background"
+                className="pl-2 opacity-60 flex gap-1 items-center"
+              >
+                <Minus size={16} />
+                The Problem
+              </a>
+            </div>
+            <a href="#research">Research Insights</a>
+            <a href="#key">Key Focus Area</a>
+            <a href="#solution">Solution First Design</a>
+            <a href="#final">Final Prototype</a>
+            <a href="#outcomes">Outcome</a>
           </div>
         </div>
         <div className="content grow prose prose-2xl prose-zinc dark:prose-invert space-y-32 lg:pl-36">
           <div id="background" className="scroll-mt-52">
             <h2 className="mt-0">Background</h2>
-            <p className="text-[18px] opacity-75">
+            <p className="text-[16px] opacity-85">
               TopTeen is a web-based mobile application designed to assist
               teenagers in discovering and exploring careers that align with
               their interests, skills, and aspirations. The primary goal of the
@@ -165,14 +152,14 @@ const Pour: FC<pageProps> = ({}) => {
               future.
             </p>
             <h4>The Problem</h4>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               The current education system and societal norms in India often
               prioritize traditional career paths, leading to limited exposure
               to unconventional or emerging career options. Many teens might be
               unaware of exciting and rewarding career choices outside the
               mainstream.
             </p>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               Moreover, existing career exploration tools often lack
               age-appropriate content and user interfaces tailored specifically
               for teenagers. Teens require a platform that speaks their
@@ -182,7 +169,7 @@ const Pour: FC<pageProps> = ({}) => {
           </div>
           <div id="research" className="scroll-mt-52">
             <h2>Research Insights</h2>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               To ensure a user-centered design we conducted extensive research
               to understand the target audience, teenagers (ages 13-19). User
               research included surveys, interviews, and user feedback from
@@ -191,7 +178,7 @@ const Pour: FC<pageProps> = ({}) => {
             <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-300 dark:border-zinc-800 not-prose">
               <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">62%</p>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   of teens reported unconventional interests (not engineering,
                   medicine or law) and aspirations, most reported lack guidance
                   on career paths that suit them best.
@@ -199,14 +186,14 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
               <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">🗺️</p>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   Many teens find it challenging to access reliable information
                   about various careers and the skills required to pursue them.
                 </p>
               </div>
               <div className="col-span-2 border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">80%</p>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   of teens reported to be heavy users of highly engaging social
                   apps. The app must be engaging and intuitive to cater to the
                   preferences of digitally-savvy teens.
@@ -221,49 +208,52 @@ const Pour: FC<pageProps> = ({}) => {
                 className="mt-0 p-2 border border-zinc-300 dark:border-zinc-800"
               />
             </div>
+            <p className="text-[14px] opacity-90 dark:opacity-85">
+              Some memorable quotes from the interviews
+            </p>
           </div>
-          <div id="research" className="scroll-mt-52">
+          <div id="key" className="scroll-mt-52">
             <h2>Key Focus Areas</h2>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               From the research insights, we identified the following key focus
               areas for the interface:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div className="flex gap-2 items-center">
                 <Flower size={32} />
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   Playful visual appeal
                 </p>
               </div>
               <div className="flex gap-2 items-center">
                 <Wand size={32} />
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   Interactiveness
                 </p>
               </div>
               <div className="flex gap-2 items-center">
                 <Layers size={32} />
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   Engaging Content
                 </p>
               </div>
               <div className="flex gap-2 items-center">
                 <ScanFace size={32} />
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   Social Relatibility
                 </p>
               </div>
               <div className="flex gap-2 items-center">
                 <Gamepad size={32} />
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <p className="text-[16px] opacity-90 dark:opacity-85">
                   Gamification
                 </p>
               </div>
             </div>
           </div>
-          <div id="research" className="scroll-mt-52">
+          <div id="solution" className="scroll-mt-52">
             <h2>Solution First Design</h2>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               Since this was short project, we decided to skip the wireframing
               stage and directly jump into designing the screens. We used the
               insights from the research to guide our design decisions.
@@ -276,7 +266,7 @@ const Pour: FC<pageProps> = ({}) => {
               by Helena Jaramilla that we came across as a team.
             </p>
             <h4>The Process</h4>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               The simplified we followed looked something like this:
             </p>
             <div className="aspect-video w-full relative">
@@ -287,20 +277,20 @@ const Pour: FC<pageProps> = ({}) => {
                 className="mt-0 border border-zinc-300 dark:border-zinc-800"
               />
             </div>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               Since I was not responsible for the branding and illustrations,
               jumping straight into prototyping was a good idea. It saved us
               time and we were able to get feedback from users faster.
             </p>
           </div>
-          <div id="research" className="scroll-mt-52">
+          <div id="final" className="scroll-mt-52">
             <h2>The Final Prototype</h2>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               For the sake of brevity, I&apos;ve only included the portotypes
               that passed user testing. Each flow also details what it aims to
               solve.
             </p>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
                 <div className="w-full aspect-[438/890]">
                   <video
@@ -311,8 +301,8 @@ const Pour: FC<pageProps> = ({}) => {
                     loop
                   />
                 </div>
-                <h4 className="mt-2 dark:mt-8">Fun Onboarding</h4>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <h4 className="text-[18px] mt-2 dark:mt-8">Fun Onboarding</h4>
+                <p className="text-[14px] opacity-90 dark:opacity-85">
                   To make the long onboarding process more fun, we made it
                   stepped and added fun features like swiping left or right to
                   select interests.
@@ -328,8 +318,8 @@ const Pour: FC<pageProps> = ({}) => {
                     loop
                   />
                 </div>
-                <h4 className="mt-2 dark:mt-8">Career Discovery</h4>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <h4 className="text-[18px] mt-2 dark:mt-8">Career Discovery</h4>
+                <p className="text-[14px] opacity-90 dark:opacity-85">
                   TopTeen uses an academic qualitative pyschometric quiz to
                   figure out the best career options for the user. The quiz is
                   designed to be fun and engaging.
@@ -346,8 +336,10 @@ const Pour: FC<pageProps> = ({}) => {
                     loop
                   />
                 </div>
-                <h4 className="mt-2 dark:mt-8">Familiar Patterns</h4>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <h4 className="text-[18px] mt-2 dark:mt-8">
+                  Familiar Patterns
+                </h4>
+                <p className="text-[14px] opacity-90 dark:opacity-85">
                   Since our target audience was mainly teens who are heavy users
                   of social media, we decided to use familiar patterns like
                   stories and feeds to make the app more intuitive.
@@ -363,8 +355,10 @@ const Pour: FC<pageProps> = ({}) => {
                     loop
                   />
                 </div>
-                <h4 className="mt-2 dark:mt-8">Gamification Features</h4>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <h4 className="text-[18px] mt-2 dark:mt-8">
+                  Gamification Features
+                </h4>
+                <p className="text-[14px] opacity-90 dark:opacity-85">
                   To retain users, we added gamification features like badges
                   and trophies to the app. Users can also compete with their
                   friends to earn more points.
@@ -380,8 +374,8 @@ const Pour: FC<pageProps> = ({}) => {
                     loop
                   />
                 </div>
-                <h4 className="mt-2 dark:mt-8">Engaging Content</h4>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <h4 className="text-[18px] mt-2 dark:mt-8">Engaging Content</h4>
+                <p className="text-[14px] opacity-90 dark:opacity-85">
                   The feed is full of engaging content like quizzes, polls and
                   articles. Users can also share their own content with the
                   community.
@@ -397,8 +391,8 @@ const Pour: FC<pageProps> = ({}) => {
                     loop
                   />
                 </div>
-                <h4 className="mt-2 dark:mt-8">Additional Tools</h4>
-                <p className="text-[18px] opacity-90 dark:opacity-75">
+                <h4 className="text-[18px] mt-2 dark:mt-8">Additional Tools</h4>
+                <p className="text-[14px] opacity-90 dark:opacity-85">
                   To provide teens with continued value, TopTeen also has an
                   extensive set of additonal tools like a resume builder,
                   college finder and more.
@@ -406,9 +400,9 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div id="outcomes">
             <h2>Outcomes</h2>
-            <p className="text-[18px] opacity-90 dark:opacity-75">
+            <p className="text-[16px] opacity-90 dark:opacity-85">
               The web app launched in public beta in July 2022. Here are some
               key outcomes:
             </p>
@@ -440,7 +434,7 @@ const Pour: FC<pageProps> = ({}) => {
             </div>
             <div className="p-6 grow">
               <h2 className="mt-0">Designing a CRM</h2>
-              <p className="text-[18px] opacity-75">
+              <p className="text-[16px] opacity-85">
                 Being passionate about journaling
               </p>
             </div>
@@ -463,7 +457,7 @@ const Pour: FC<pageProps> = ({}) => {
             </div>
             <div className="p-6 grow">
               <h2 className="mt-0">Helping teens find the best careers</h2>
-              <p className="text-[18px] opacity-75">
+              <p className="text-[16px] opacity-85">
                 Being passionate about journaling
               </p>
             </div>
