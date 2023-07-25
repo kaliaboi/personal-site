@@ -77,8 +77,10 @@ const Navigation: FC = ({}) => {
                 offset !== 0 ? "opacity-100" : "-translate-y-2 opacity-0"
               } self-center font-[400] dark:text-zinc-50 ml-4 md:block hidden transition-all`}
             >
-              <p className="text-base">Abhishek</p>
-              <p className="opacity-50">Product Designer, Frontend Developer</p>
+              <p>Abhishek.</p>
+              <p className="opacity-50 mt-0">
+                Product Designer, Frontend Developer
+              </p>
             </span>
           </a>
           <ul className="gap-4 md:flex hidden">
@@ -109,7 +111,7 @@ const Navigation: FC = ({}) => {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <Separator className="hidden dark:block" />
+        <Separator className="hidden dark:block opacity-70" />
       </div>
     </motion.nav>
   );

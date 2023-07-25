@@ -572,7 +572,7 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="md:sticky md:top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
                     <Package />
-                    Various modes
+                    Therapist app
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -583,19 +583,20 @@ const Pour: FC<pageProps> = ({}) => {
                 </div>
               </div>
               <div className="w-full aspect-[438/890] relative">
-                <Image
-                  src={"/pour/gifs/1.gif"}
-                  fill
-                  alt={"HMW 1"}
+                <video
+                  src={"/pour/videos/addclient.mp4"}
                   className="mt-0"
+                  muted
+                  autoPlay
+                  loop
                 />
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
               <div className="max-w-xs md:max-w-md relative">
-                <div className="sticky top-44">
+                <div className="md:sticky md:top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
-                    <MessageSquare />
+                    <Package />
                     Guided journaling
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
@@ -607,11 +608,12 @@ const Pour: FC<pageProps> = ({}) => {
                 </div>
               </div>
               <div className="w-full aspect-[438/890] relative">
-                <Image
-                  src={"/pour/gifs/1.gif"}
-                  fill
-                  alt={"HMW 1"}
+                <video
+                  src={"/pour/videos/entry.mp4"}
                   className="mt-0"
+                  muted
+                  autoPlay
+                  loop
                 />
               </div>
             </div>
@@ -619,8 +621,8 @@ const Pour: FC<pageProps> = ({}) => {
               <div className="max-w-xs md:max-w-md relative">
                 <div className="sticky top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
-                    <ListChecks />
-                    Discussion points
+                    <MessageSquare />
+                    Adding comments
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -631,11 +633,37 @@ const Pour: FC<pageProps> = ({}) => {
                 </div>
               </div>
               <div className="w-full aspect-[438/890] relative">
-                <Image
-                  src={"/pour/gifs/1.gif"}
-                  fill
-                  alt={"HMW 1"}
+                <video
+                  src={"/pour/videos/comments.mp4"}
                   className="mt-0"
+                  muted
+                  autoPlay
+                  loop
+                />
+              </div>
+            </div>
+            <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
+              <div className="max-w-xs md:max-w-md relative">
+                <div className="sticky top-44">
+                  <h4 className="mt-0 flex gap-2 items-center">
+                    <ListChecks />
+                    Reading Comments
+                  </h4>
+                  <p className="text-[16px] opacity-90 dark:opacity-85">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis eaque quisquam maxime tenetur quia recusandae,
+                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
+                    ipsam officia cum odit velit placeat!
+                  </p>
+                </div>
+              </div>
+              <div className="w-full aspect-[438/890] relative">
+                <video
+                  src={"/pour/videos/read.mp4"}
+                  className="mt-0"
+                  muted
+                  autoPlay
+                  loop
                 />
               </div>
             </div>
@@ -644,7 +672,7 @@ const Pour: FC<pageProps> = ({}) => {
                 <div className="sticky top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
                     <Activity />
-                    Therapist app
+                    Session View
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -656,7 +684,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
               <div className="w-full aspect-[438/890]">
                 <video
-                  src={"/test-video.mp4"}
+                  src={"/pour/videos/session.mp4"}
                   className="mt-0"
                   muted
                   autoPlay
