@@ -76,8 +76,8 @@ const Pour: FC<pageProps> = ({}) => {
         <h1 className="text-[28px] md:text-[64px] font-[700] max-w-4xl leading-[110%] pb-12">
           Improving the effectiveness CBT with the help of Journaling
         </h1>
-        <div className="tldr flex flex-col border border-zinc-300 dark:border-zinc-800">
-          <div className="w-full aspect-video relative  border-b border-zinc-300 dark:border-zinc-800">
+        <div className="tldr flex flex-col border border-zinc-400 dark:border-zinc-800">
+          <div className="w-full aspect-video relative  border-b border-zinc-400 dark:border-zinc-800">
             <Image
               src={"/pour-page-cover.png"}
               fill
@@ -86,7 +86,7 @@ const Pour: FC<pageProps> = ({}) => {
             />
           </div>
           <div className="w-full h-auto relative grid grid-cols-1 md:grid-cols-3 ">
-            <div className="intro border-r p-6 border-zinc-300 dark:border-zinc-800 space-y-4">
+            <div className="intro border-r p-6 border-zinc-400 dark:border-zinc-800 space-y-4">
               <p className="text-[14px] opacity-80 dark:opacity-60 pb-4">
                 Intro
               </p>
@@ -103,22 +103,22 @@ const Pour: FC<pageProps> = ({}) => {
                 sessions.
               </p>
             </div>
-            <div className="details text-sm border-r border-zinc-300 dark:border-zinc-800 flex flex-col">
-              <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
+            <div className="details text-sm border-r border-zinc-400 dark:border-zinc-800 flex flex-col">
+              <div className="stat p-6 space-y-2 border-b border-zinc-400 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">Scope</p>
                 <p className="text-[16px] font-medium">Capstone project</p>
               </div>
-              <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
+              <div className="stat p-6 space-y-2 border-b border-zinc-400 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">Period</p>
                 <p className="text-[16px] font-medium">
                   January, 2023 – May, 2023
                 </p>
               </div>
-              <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
+              <div className="stat p-6 space-y-2 border-b border-zinc-400 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">Team</p>
                 <p className="text-[16px] font-medium">Solo project</p>
               </div>
-              <div className="stat p-6 space-y-2 border-b border-zinc-300 dark:border-zinc-800">
+              <div className="stat p-6 space-y-2 border-b border-zinc-400 dark:border-zinc-800">
                 <p className="text-[14px] opacity-80 dark:opacity-60">
                   My Role
                 </p>
@@ -136,14 +136,14 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
             <div className="stats flex flex-col">
-              <div className="stat p-6 border-b border-zinc-300 dark:border-zinc-800">
+              <div className="stat p-6 border-b border-zinc-400 dark:border-zinc-800">
                 <p className="text-[48px] font-black">100%</p>
                 <p className="text-[14px] opacity-80 dark:opacity-60">
                   of interviewed therapists would recommend Pour to their
                   clients
                 </p>
               </div>
-              <div className="stat p-6 border-b border-zinc-300 dark:border-zinc-800">
+              <div className="stat p-6 border-b border-zinc-400 dark:border-zinc-800">
                 <p className="text-[48px] font-black">150+</p>
                 <p className="text-[14px] opacity-80 dark:opacity-60">
                   Signups on the interest form
@@ -151,7 +151,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div className="w-full border-t border-zinc-300 dark:border-zinc-800 p-6">
+          <div className="w-full border-t border-zinc-400 dark:border-zinc-800 p-6">
             <Link
               href={"google.com"}
               className={cn(
@@ -284,40 +284,40 @@ const Pour: FC<pageProps> = ({}) => {
               The qualitative interviews led to some interesting takeaways and I
               could see the strong connecting between therapy and journaling.
             </p>
-            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-300 dark:border-zinc-800 not-prose">
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-400 dark:border-zinc-800 not-prose">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">🤷‍♂️</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   Most people who don&apos;t journal, don&apos;t know how to
                   start
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">🫣</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   People feel too vulnerable expressing their thoughts
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">🗒️</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   People in therapy were introduced to journaling by their
                   therapists
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">👩‍⚕️</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   Therapists often recommend journaling as tool in CBT
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">🚨</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   People often use journaling as a crisis management tool
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">📖</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   People who journal often reflect and read past journals
@@ -333,7 +333,7 @@ const Pour: FC<pageProps> = ({}) => {
               understand what features exist on the market and where
               there&apos;s space to add.
             </p>
-            <p className="text-sm p-4 border border-zinc-300 dark:border-zinc-800 mb-8">
+            <p className="text-sm p-4 border border-zinc-400 dark:border-zinc-800 mb-8">
               💡 Hover on the app icons to see my takeaways from each
             </p>
             <div className="flex flex-wrap gap-6">
@@ -386,7 +386,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/hmws/hmw-1.svg"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 p-2 border border-zinc-300 dark:border-zinc-800"
+                  className="mt-0 p-2 border border-zinc-400 dark:border-zinc-800"
                 />
               </div>
               <div className="aspect-square w-full relative">
@@ -394,7 +394,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/hmws/hmw-2.svg"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 p-2 border border-zinc-300 dark:border-zinc-800"
+                  className="mt-0 p-2 border border-zinc-400 dark:border-zinc-800"
                 />
               </div>
               <div className="aspect-square w-full relative">
@@ -402,7 +402,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/hmws/hmw-3.svg"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 p-2 border border-zinc-300 dark:border-zinc-800"
+                  className="mt-0 p-2 border border-zinc-400 dark:border-zinc-800"
                 />
               </div>
             </div>
@@ -522,12 +522,12 @@ const Pour: FC<pageProps> = ({}) => {
               The folowing flow shows the complete user flow with journeys for
               both users and therapists.
             </p>
-            <p className="text-sm p-4 border border-zinc-300 dark:border-zinc-800 mb-8">
+            <p className="text-sm p-4 border border-zinc-400 dark:border-zinc-800 mb-8">
               💡 Go full screen to view this better
             </p>
             <iframe
               allowFullScreen
-              className="border p-2 border-zinc-300 dark:border-zinc-800 w-full"
+              className="border p-2 border-zinc-400 dark:border-zinc-800 w-full"
               height="450"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6OqxuyHiSj137XEola8Yn8%2FPour-Journey%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DZ5bQkVUNcdv85LLF-1"
             ></iframe>
@@ -543,7 +543,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/pour/visual/pour-icon.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border p-2 border-zinc-300 dark:border-zinc-800"
+                className="mt-0 border p-2 border-zinc-400 dark:border-zinc-800"
               />
             </div>
             <div className="grid grid-cols-2 mt-4 gap-4">
@@ -552,7 +552,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/visual/colors.png"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 border p-2 border-zinc-300 dark:border-zinc-800"
+                  className="mt-0 border p-2 border-zinc-400 dark:border-zinc-800"
                 />
               </div>
               <div className="aspect-square w-full relative">
@@ -560,7 +560,7 @@ const Pour: FC<pageProps> = ({}) => {
                   src={"/pour/visual/fonts.svg"}
                   fill
                   alt={"HMW 1"}
-                  className="mt-0 border p-2 border-zinc-300 dark:border-zinc-800"
+                  className="mt-0 border p-2 border-zinc-400 dark:border-zinc-800"
                 />
               </div>
             </div>
@@ -673,15 +673,15 @@ const Pour: FC<pageProps> = ({}) => {
               I&apos;ve learnt a lot. Here are some nice numbers that still make
               me happy!
             </p>
-            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-300 dark:border-zinc-800 not-prose">
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-400 dark:border-zinc-800 not-prose">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">100%</p>
                 <p className="text-[14px] opacity-100 dark:opacity-60">
                   of interviewed therapists would recommend Pour to their
                   clients
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">150+</p>
                 <p className="text-[14px] opacity-100 dark:opacity-60">
                   Signups on the interest form
@@ -696,7 +696,7 @@ const Pour: FC<pageProps> = ({}) => {
               for this concept I have decided to take this project forward and
               make it a real working project!
             </p>
-            <p className="text-sm p-4 border border-zinc-300 dark:border-zinc-800 mb-8">
+            <p className="text-sm p-4 border border-zinc-400 dark:border-zinc-800 mb-8">
               💡 I&apos;m currently building a revised version of this concept
               called{" "}
               <Link
@@ -712,21 +712,17 @@ const Pour: FC<pageProps> = ({}) => {
       </article>
       <div className="container max-w-6xl space-y-6 my-48 prose dark:prose-invert prose-zinc">
         <h1 className="mb-12">More work</h1>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="h-auto w-full border border-zinc-300 dark:border-zinc-800 flex flex-col">
-            <div className="aspect-video w-full relative border-b border-zinc-300 dark:border-zinc-800">
+          <div className="h-auto w-full border border-zinc-400 dark:border-zinc-800 flex flex-col">
+            <div className="aspect-video w-full relative border-b border-zinc-400 dark:border-zinc-800">
               <Image src={"/sita-cover.png"} fill alt="test" className="mt-0" />
             </div>
             <div className="p-6 grow">
-              <h2 className="mt-0">Designing a CRM</h2>
-              <p className="text-[16px] opacity-90 dark:opacity-85">
-                Being passionate about journaling
-              </p>
+              <h2 className="my-0">Design system for Sita CRM</h2>
             </div>
-            <div className="border-t border-zinc-300 dark:border-zinc-800 p-6 h-20 flex items-center">
+            <div className="border-t border-zinc-400 dark:border-zinc-800 p-6 h-20 flex items-center">
               <Link
-                href="/"
+                href="/work/sita"
                 className={cn(
                   buttonVariants({ variant: "link", size: "lg" }),
                   "p-0 flex gap-4"
@@ -737,19 +733,16 @@ const Pour: FC<pageProps> = ({}) => {
               </Link>
             </div>
           </div>
-          <div className="h-auto w-full border border-zinc-300 dark:border-zinc-800 flex flex-col">
-            <div className="aspect-video w-full relative border-b border-zinc-300 dark:border-zinc-800">
+          <div className="h-auto w-full border border-zinc-400 dark:border-zinc-800 flex flex-col">
+            <div className="aspect-video w-full relative border-b border-zinc-400 dark:border-zinc-800">
               <Image src={"/tt-cover.png"} fill alt="test" className="mt-0" />
             </div>
             <div className="p-6 grow">
-              <h2 className="mt-0">Helping teens find the best careers</h2>
-              <p className="text-[16px] opacity-90 dark:opacity-85">
-                Being passionate about journaling
-              </p>
+              <h2 className="my-0">Helping teens find the best careers</h2>
             </div>
-            <div className="border-t border-zinc-300 dark:border-zinc-800 p-6 h-20 flex items-center">
+            <div className="border-t border-zinc-400 dark:border-zinc-800 p-6 h-20 flex items-center">
               <Link
-                href="/"
+                href="/work/topteen"
                 className={cn(
                   buttonVariants({ variant: "link", size: "lg" }),
                   "p-0 flex gap-4"

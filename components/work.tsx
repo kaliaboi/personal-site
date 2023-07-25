@@ -50,7 +50,7 @@ const Work: FC = ({}) => {
 
         <div className="card w-full">
           <Link href={"/work/topteen"}>
-            <div className="aspect-video w-full bg-zinc-700 mb-2 relative">
+            <div className="aspect-video w-full bg-black mb-2 relative">
               <Image src={"/tt-cover.png"} fill alt="test" />
             </div>
             <p>TopTeen – An app to help teens find the right careers</p>

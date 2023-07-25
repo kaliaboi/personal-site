@@ -13,3 +13,7 @@ body,
 main {
   scroll-behavior: smooth;
 }
+
+* {
+  scroll-margin-top: 8rem;
+}

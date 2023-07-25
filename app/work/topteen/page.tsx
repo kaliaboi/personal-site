@@ -175,8 +175,8 @@ const Pour: FC<pageProps> = ({}) => {
               research included surveys, interviews, and user feedback from
               similar existing apps or platforms. Key insights include:
             </p>
-            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-300 dark:border-zinc-800 not-prose">
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-400 dark:border-zinc-800 not-prose">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">62%</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   of teens reported unconventional interests (not engineering,
@@ -184,14 +184,14 @@ const Pour: FC<pageProps> = ({}) => {
                   on career paths that suit them best.
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">🗺️</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   Many teens find it challenging to access reliable information
                   about various careers and the skills required to pursue them.
                 </p>
               </div>
-              <div className="col-span-2 border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="col-span-2 border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">80%</p>
                 <p className="text-[16px] opacity-90 dark:opacity-85">
                   of teens reported to be heavy users of highly engaging social
@@ -205,7 +205,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/tt/quotes.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 p-2 border border-zinc-300 dark:border-zinc-800"
+                className="mt-0 p-2 border border-zinc-400 dark:border-zinc-800"
               />
             </div>
             <p className="text-[14px] opacity-90 dark:opacity-85">
@@ -251,6 +251,7 @@ const Pour: FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
+
           <div id="solution" className="scroll-mt-52">
             <h2>Solution First Design</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
@@ -258,7 +259,7 @@ const Pour: FC<pageProps> = ({}) => {
               stage and directly jump into designing the screens. We used the
               insights from the research to guide our design decisions.
             </p>
-            <p className="text-sm p-4 border border-zinc-300 dark:border-zinc-800 mb-8">
+            <p className="text-sm p-4 border border-zinc-400 dark:border-zinc-800 mb-8">
               💡 This process was inspired by a ConFig 2021{" "}
               <Link href="https://www.youtube.com/watch?v=HApKjboMC80&list=PLXDU_eVOJTx68R0B8tettMfY6XeItWhV4&index=13">
                 talk
@@ -274,7 +275,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/tt/process.svg"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border border-zinc-300 dark:border-zinc-800"
+                className="mt-0 border border-zinc-400 dark:border-zinc-800"
               />
             </div>
             <p className="text-[16px] opacity-90 dark:opacity-85">
@@ -283,6 +284,7 @@ const Pour: FC<pageProps> = ({}) => {
               time and we were able to get feedback from users faster.
             </p>
           </div>
+
           <div id="final" className="scroll-mt-52">
             <h2>The Final Prototype</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
@@ -406,14 +408,14 @@ const Pour: FC<pageProps> = ({}) => {
               The web app launched in public beta in July 2022. Here are some
               key outcomes:
             </p>
-            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-300 dark:border-zinc-800 not-prose">
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-400 dark:border-zinc-800 not-prose">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">3K+</p>
                 <p className="text-[14px] opacity-100 dark:opacity-60">
                   total signups on the app
                 </p>
               </div>
-              <div className="border-b border-r border-zinc-300 dark:border-zinc-800 p-6">
+              <div className="border-b border-r border-zinc-400 dark:border-zinc-800 p-6">
                 <p className="text-[48px] font-black">100+</p>
                 <p className="text-[14px] opacity-100 dark:opacity-60">
                   people have successfully applied to colleges with the help of
@@ -426,21 +428,17 @@ const Pour: FC<pageProps> = ({}) => {
       </article>
       <div className="container max-w-6xl space-y-6 my-48 prose dark:prose-invert prose-zinc">
         <h1 className="mb-12">More work</h1>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="h-auto w-full border border-zinc-800 flex flex-col">
-            <div className="aspect-video w-full relative border-b border-zinc-800">
+          <div className="h-auto w-full border border-zinc-400 dark:border-zinc-800 flex flex-col">
+            <div className="aspect-video w-full relative border-b border-zinc-400 dark:border-zinc-800">
               <Image src={"/sita-cover.png"} fill alt="test" className="mt-0" />
             </div>
             <div className="p-6 grow">
-              <h2 className="mt-0">Designing a CRM</h2>
-              <p className="text-[16px] opacity-85">
-                Being passionate about journaling
-              </p>
+              <h2 className="my-0">Design system for Sita CRM</h2>
             </div>
-            <div className="border-t border-zinc-800 p-6 h-20 flex items-center">
+            <div className="border-t border-zinc-400 dark:border-zinc-800 p-6 h-20 flex items-center">
               <Link
-                href="/"
+                href="/work/sita"
                 className={cn(
                   buttonVariants({ variant: "link", size: "lg" }),
                   "p-0 flex gap-4"
@@ -451,19 +449,16 @@ const Pour: FC<pageProps> = ({}) => {
               </Link>
             </div>
           </div>
-          <div className="h-auto w-full border border-zinc-800 flex flex-col">
-            <div className="aspect-video w-full relative border-b border-zinc-800">
-              <Image src={"/tt-cover.png"} fill alt="test" className="mt-0" />
+          <div className="h-auto w-full border border-zinc-400 dark:border-zinc-800 flex flex-col">
+            <div className="aspect-video w-full relative border-b border-zinc-400 dark:border-zinc-800">
+              <Image src={"/pour-2.png"} fill alt="test" className="mt-0" />
             </div>
             <div className="p-6 grow">
-              <h2 className="mt-0">Helping teens find the best careers</h2>
-              <p className="text-[16px] opacity-85">
-                Being passionate about journaling
-              </p>
+              <h2 className="my-0">Journaling for prople in therapy</h2>
             </div>
-            <div className="border-t border-zinc-800 p-6 h-20 flex items-center">
+            <div className="border-t border-zinc-400 dark:border-zinc-800 p-6 h-20 flex items-center">
               <Link
-                href="/"
+                href="/work/pour"
                 className={cn(
                   buttonVariants({ variant: "link", size: "lg" }),
                   "p-0 flex gap-4"
