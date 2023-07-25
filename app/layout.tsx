@@ -1,9 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({ subsets: ["latin"] });
 const larsseit = localFont({
   src: [
     {
