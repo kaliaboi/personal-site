@@ -350,7 +350,8 @@ const Pour: FC<pageProps> = ({}) => {
             </p>
             <p className="text-sm p-4 border border-zinc-400   dark:border-zinc-800 mb-8">
               💡 An itinerary in this context is a daily breakdown for a
-              traveller's travel in India including hotels, flights, activities.
+              traveller &apos;s travel in India including hotels, flights,
+              activities.
             </p>
             <div className="aspect-[1920/677] w-full relative">
               <Image
@@ -364,18 +365,18 @@ const Pour: FC<pageProps> = ({}) => {
           <div id="flow" className="scroll-mt-52">
             <h2>The Flow</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
 
             <h4 className="mt-20" id="cities">
               Adding cities
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -391,9 +392,9 @@ const Pour: FC<pageProps> = ({}) => {
               Adding products
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -409,9 +410,9 @@ const Pour: FC<pageProps> = ({}) => {
               Viewing modes
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -427,9 +428,9 @@ const Pour: FC<pageProps> = ({}) => {
               Edit and export
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -452,9 +453,9 @@ const Pour: FC<pageProps> = ({}) => {
               Atoms
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[4/3] w-full relative">
               <Image
@@ -469,9 +470,9 @@ const Pour: FC<pageProps> = ({}) => {
               Molecules
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[4/3] w-full relative">
               <Image
@@ -486,9 +487,9 @@ const Pour: FC<pageProps> = ({}) => {
               Organisms
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[1345/478] w-full relative">
               <Image
@@ -503,9 +504,9 @@ const Pour: FC<pageProps> = ({}) => {
               Templates
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we'll
-              break down how the design system using the atomic design approach
-              got us there.
+              Lets look at the final screens for the hero flow and later we
+              &apos;ll break down how the design system using the atomic design
+              approach got us there.
             </p>
             <div className="aspect-[4/3] w-full relative">
               <Image
