@@ -454,7 +454,7 @@ const Pour: FC<pageProps> = ({}) => {
               <Image src={"/pour-2.png"} fill alt="test" className="mt-0" />
             </div>
             <div className="p-6 grow">
-              <h2 className="my-0">Journaling for prople in therapy</h2>
+              <h2 className="my-0">Journaling for people in therapy</h2>
             </div>
             <div className="border-t border-zinc-400 dark:border-zinc-800 p-6 h-20 flex items-center">
               <Link
