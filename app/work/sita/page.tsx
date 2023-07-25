@@ -337,7 +337,7 @@ const Pour: FC<pageProps> = ({}) => {
             <div className="w-full aspect-video relative  border-b border-zinc-400 dark:border-zinc-800">
               <Image src={"/sita/c.png"} fill alt="cover" className="my-0" />
             </div>
-            <p className="text-sm p-4 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800 mb-8">
+            <p className="text-sm p-4 border border-zinc-400   dark:border-zinc-800 mb-8">
               💡 I worked on the planning part of the unified platform.
             </p>
           </div>
@@ -348,7 +348,7 @@ const Pour: FC<pageProps> = ({}) => {
               After speaking with the planners we came up with a simpliefied
               flow.
             </p>
-            <p className="text-sm p-4 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800 mb-8">
+            <p className="text-sm p-4 border border-zinc-400   dark:border-zinc-800 mb-8">
               💡 An itinerary in this context is a daily breakdown for a
               traveller's travel in India including hotels, flights, activities.
             </p>
@@ -357,7 +357,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/sita/process-2.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800"
+                className="mt-0 border border-zinc-400   dark:border-zinc-800"
               />
             </div>
           </div>
@@ -461,7 +461,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/sita/atomic/1.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800"
+                className="mt-0 border border-zinc-400   dark:border-zinc-800"
               />
             </div>
 
@@ -478,7 +478,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/sita/atomic/2.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800"
+                className="mt-0 border border-zinc-400   dark:border-zinc-800"
               />
             </div>
 
@@ -495,7 +495,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/sita/atomic/3.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800"
+                className="mt-0 border border-zinc-400   dark:border-zinc-800"
               />
             </div>
 
@@ -512,7 +512,7 @@ const Pour: FC<pageProps> = ({}) => {
                 src={"/sita/atomic/4.png"}
                 fill
                 alt={"HMW 1"}
-                className="mt-0 border border-zinc-400 dark:border-zinc-400 dark:border-zinc-800"
+                className="mt-0 border border-zinc-400   dark:border-zinc-800"
               />
             </div>
 
@@ -523,20 +523,20 @@ const Pour: FC<pageProps> = ({}) => {
                 Sita employees on a daily basis. Here are some key stats since
                 it went live in October 2022.
               </p>
-              <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-400 dark:border-zinc-400 dark:border-zinc-800 not-prose">
-                <div className="border-b border-r border-zinc-400 dark:border-zinc-400 dark:border-zinc-800 p-6">
+              <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 border-l border-t border-zinc-400   dark:border-zinc-800 not-prose">
+                <div className="border-b border-r border-zinc-400   dark:border-zinc-800 p-6">
                   <p className="text-[48px] font-black">24%</p>
                   <p className="text-[14px] opacity-100 dark:opacity-60">
                     increase in itenerary creations per month
                   </p>
                 </div>
-                <div className="border-b border-r border-zinc-400 dark:border-zinc-400 dark:border-zinc-800 p-6">
+                <div className="border-b border-r border-zinc-400   dark:border-zinc-800 p-6">
                   <p className="text-[48px] font-black">500+</p>
                   <p className="text-[14px] opacity-100 dark:opacity-60">
                     itineraries created using the new system
                   </p>
                 </div>
-                <div className="border-b border-r border-zinc-400 dark:border-zinc-400 dark:border-zinc-800 p-6 col-span-1 md:col-span-2">
+                <div className="border-b border-r border-zinc-400   dark:border-zinc-800 p-6 col-span-1 md:col-span-2">
                   <p className="text-[48px] font-black">73%</p>
                   <p className="text-[14px] opacity-100 dark:opacity-60">
                     conversion rate of itineraries created
