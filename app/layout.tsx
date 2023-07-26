@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 const manrope = Manrope({ subsets: ["latin"] });
@@ -73,6 +74,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " antialiased"}>{children}</body>
+      <Analytics />
     </html>
   );
 }
