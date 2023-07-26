@@ -24,10 +24,10 @@ export const links = [
     title: "About",
     href: "/about",
   },
-  {
-    title: "Writing",
-    href: "/writing",
-  },
+  // {
+  //   title: "Writing",
+  //   href: "/writing",
+  // },
   {
     title: "Contact",
     href: "/about#contact",

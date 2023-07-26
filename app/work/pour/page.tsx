@@ -5,11 +5,13 @@ import {
   ArrowLeft,
   ArrowUpRight,
   DotIcon,
+  HelpingHand,
   ListChecks,
   MessageSquare,
   MessageSquareDashed,
   Minus,
   Package,
+  Plus,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -238,7 +240,7 @@ const Pour: FC<pageProps> = ({}) => {
             <h2 className="mt-0">Background</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
               This project was my capstone project submission for my grad degree
-              in proeduct design at{" "}
+              in product design at{" "}
               <Link
                 href="https://www.newschool.edu/parsons/"
                 className="underline-offset-4"
@@ -273,9 +275,9 @@ const Pour: FC<pageProps> = ({}) => {
               Interviews
             </h3>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              I condeucted qualitative discussions with 7 people with varying
+              I conducted qualitative discussions with 7 people with varying
               levels of journaling experience and 2 therapists about why and how
-              they journal and if they don’t what’s been the blockers if any
+              they journal and if they don’t what’s been the blockers if any.
             </p>
             <h4 id="insights" className="pb-4 scroll-mt-52">
               Insights
@@ -410,10 +412,10 @@ const Pour: FC<pageProps> = ({}) => {
           <div id="wireframes" className="scroll-mt-52">
             <h2>Wireframes</h2>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eaque quisquam maxime tenetur quia recusandae, porro quis sunt.
-              Ratione, vel. Quas aliquid excepturi ex ipsam officia cum odit
-              velit placeat!
+              The focus of the wireframing excercise was to iterate quickly and
+              test all the insights gathered from the research phase. I started
+              with some low fidelity wireframes and then moved on to high
+              fidelity ones. Here are some of the key screens.
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-12">
               <div>
@@ -509,11 +511,11 @@ const Pour: FC<pageProps> = ({}) => {
             </p>
             <ul className="text-[16px] opacity-90 dark:opacity-85">
               <li>Various modes of journaling – guided, prompts, free etc.</li>
-              <li>AI powered guided journals</li>
+              <li>AI powered guided journals.</li>
               <li>
-                Auto generated discussion points and summaries from entries
+                Auto generated discussion points and summaries from entries.
               </li>
-              <li>Separate app for therapists to monitor clients</li>
+              <li>Separate app for therapists to monitor clients.</li>
             </ul>
             <h4 id="flow" className="scroll-mt-52">
               The final flow
@@ -566,19 +568,19 @@ const Pour: FC<pageProps> = ({}) => {
             </div>
           </div>
           <div id="key" className="relative scroll-mt-52">
-            <h2>Key Screens</h2>
+            <h2>Key Flows</h2>
             <div className="md:grid md:grid-cols-2 gap-24 mb-24 relative">
               <div className="max-w-xs md:max-w-md relative">
                 <div className="md:sticky md:top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
-                    <Package />
-                    Therapist app
+                    <Plus />
+                    Adding Patients
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis eaque quisquam maxime tenetur quia recusandae,
-                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
-                    ipsam officia cum odit velit placeat!
+                    Since the the app is recommended by therapists, they can
+                    easily add their patients to the app with a QR code. After
+                    scanning the code, the patient downlaods the app and is
+                    added to the therapist&apos;s list.
                   </p>
                 </div>
               </div>
@@ -596,14 +598,14 @@ const Pour: FC<pageProps> = ({}) => {
               <div className="max-w-xs md:max-w-md relative">
                 <div className="md:sticky md:top-44">
                   <h4 className="mt-0 flex gap-2 items-center">
-                    <Package />
+                    <HelpingHand />
                     Guided journaling
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis eaque quisquam maxime tenetur quia recusandae,
-                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
-                    ipsam officia cum odit velit placeat!
+                    Pour provides various modes of journaling. Guided journaling
+                    is one of them. It helps people get started with journaling
+                    by asking them to select from a range of emotions and then
+                    guiding them through the process.
                   </p>
                 </div>
               </div>
@@ -625,10 +627,8 @@ const Pour: FC<pageProps> = ({}) => {
                     Adding comments
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis eaque quisquam maxime tenetur quia recusandae,
-                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
-                    ipsam officia cum odit velit placeat!
+                    Once an entry is made and shared, therapists get a push
+                    notification and can add comments to the entry.
                   </p>
                 </div>
               </div>
@@ -650,10 +650,10 @@ const Pour: FC<pageProps> = ({}) => {
                     Reading Comments
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis eaque quisquam maxime tenetur quia recusandae,
-                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
-                    ipsam officia cum odit velit placeat!
+                    When a therapist adds a comment, the patient gets a a
+                    otification and they can review the comments before their
+                    next session. Only journal entries that are shared with the
+                    therapist are visible to them.
                   </p>
                 </div>
               </div>
@@ -675,10 +675,11 @@ const Pour: FC<pageProps> = ({}) => {
                     Session View
                   </h4>
                   <p className="text-[16px] opacity-90 dark:opacity-85">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis eaque quisquam maxime tenetur quia recusandae,
-                    porro quis sunt. Ratione, vel. Quas aliquid excepturi ex
-                    ipsam officia cum odit velit placeat!
+                    The session view is a tool for patients to review their auto
+                    generated notes and discussion points before a session. This
+                    helps them prepare for the session and get the most out of
+                    it. During a session they can also take notes and
+                    record/auto transcribe the session.
                   </p>
                 </div>
               </div>
