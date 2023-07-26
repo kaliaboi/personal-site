@@ -155,7 +155,9 @@ const Pour: FC<pageProps> = ({}) => {
           </div>
           <div className="w-full border-t border-zinc-400 dark:border-zinc-800 p-6">
             <Link
-              href={"google.com"}
+              href={
+                "https://cloud.protopie.io/p/f965bc27cefbc101e84b9af7?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&playSpeed=1"
+              }
               className={cn(
                 buttonVariants({ variant: "link", size: "lg" }),
                 "pl-0 text-[16px] font-bold w-fit flex items-center gap-2"
