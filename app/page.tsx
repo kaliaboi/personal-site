@@ -22,7 +22,7 @@ export default function Home() {
         <Work />
         <section>
           <p className="mb-8 mt-24 font-bold text-[24px]">Side Projects</p>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-x-12 gap-y-16 ">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-16 ">
             <div>
               {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
@@ -42,7 +42,7 @@ export default function Home() {
             <div>
               {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
-                href={"https://journi.site"}
+                href={"https://abhishek-kalia.com"}
                 className={cn(
                   buttonVariants({ variant: "link" }),
                   "pl-0 underline text-[16px]"
@@ -51,8 +51,8 @@ export default function Home() {
                 This Site
               </Link>
               <p className="opacity-60 dark:opacity-50">
-                A tiny AI powered journal I designed, built and shipped from
-                scratch
+                My portfolio built with Next JS, Tailwind CSS, Vercel and Sanity
+                (for content)
               </p>
             </div>
             {/* <div>
@@ -73,7 +73,9 @@ export default function Home() {
             <div>
               {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
-                href={"https://journi.site"}
+                href={
+                  "https://www.figma.com/community/plugin/1203104033713940979/Pomodoro"
+                }
                 className={cn(
                   buttonVariants({ variant: "link" }),
                   "pl-0 underline text-[16px]"
@@ -86,47 +88,21 @@ export default function Home() {
                 more prooductive.
               </p>
             </div>
-            {/* <div>
-              <Link
-                href={"https://journi.site"}
-                className={cn(
-                  buttonVariants({ variant: "link" }),
-                  "pl-0 underline text-[16px]"
-                )}
-              >
-                SnippetBin
-              </Link>
-              <p className="opacity-50">A simple code paste and share tool</p>
-            </div> */}
             <div>
-              {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
-                href={"https://journi.site"}
+                href={"https://unberry.com"}
                 className={cn(
                   buttonVariants({ variant: "link" }),
                   "pl-0 underline text-[16px]"
                 )}
               >
-                Tranquill
-              </Link>
-              <p className="opacity-60 dark:opacity-50">
-                An intuitive white noise mixer for focus
-              </p>
-            </div>
-            {/* <div>
-              <Link
-                href={"https://journi.site"}
-                className={cn(
-                  buttonVariants({ variant: "link" }),
-                  "pl-0 underline text-[16px]"
-                )}
-              >
-                Web&apos;s Grain
+                Unberry Website
               </Link>
               <p className="opacity-50">
-                A website remembering an iconic piece of writing
+                A website for a hiring tech startup I worked with. Built with
+                NextJS.
               </p>
-            </div> */}
+            </div>
           </div>
         </section>
       </main>

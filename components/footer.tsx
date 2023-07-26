@@ -54,28 +54,28 @@ export default function Footer() {
           <div className="flex flex-col gap-1">
             <p>Me on the interwebs</p>
             <Link
-              href="https://google.com"
+              href="https://www.linkedin.com/in/kaliaabhishek/"
               className="opacity-50 flex gap-2 items-center"
             >
               <LinkedInLogoIcon />
               Stalk me on LinkedIn
             </Link>
             <Link
-              href="https://google.com"
+              href="https://twitter.com/akalia_dev"
               className="opacity-50 flex gap-2 items-center"
             >
               <TwitterLogoIcon />
               Be the first person to like my tweets
             </Link>
             <Link
-              href="https://google.com"
+              href="https://dribbble.com/abhishek-kalia"
               className="opacity-50 flex gap-2 items-center"
             >
               <LucideDribbble size={16} />
               View my designs on Dribbble
             </Link>
             <Link
-              href="https://google.com"
+              href="https://github.com/kaliaboi"
               className="opacity-50 flex gap-2 items-center"
             >
               <GitHubLogoIcon />
