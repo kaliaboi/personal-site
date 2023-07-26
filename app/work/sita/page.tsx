@@ -26,13 +26,7 @@ const Pour: FC<pageProps> = ({}) => {
           <div className="w-full aspect-video relative  border-b border-zinc-400 dark:border-zinc-800 overflow-hidden bg-zinc-900">
             {/* <Image src={"/sita-cover.png"} fill alt="cover" className="p-2" /> */}
             <div className="aspect-[1280/854] w-[1280] relative top-0 p-10">
-              <video
-                src={"/sita/flow.mp4"}
-                className="my-0 shadow-sm rounded-sm md:rounded-2xl"
-                muted
-                autoPlay
-                loop
-              />
+              <Image src={"/sita-cover.png"} fill alt="cover" className="p-2" />
             </div>
           </div>
           <div className="w-full h-auto relative grid grid-cols-1 md:grid-cols-3 ">
@@ -108,18 +102,6 @@ const Pour: FC<pageProps> = ({}) => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="w-full border-t border-zinc-400 dark:border-zinc-800 p-6">
-            <Link
-              href={"google.com"}
-              className={cn(
-                buttonVariants({ variant: "link", size: "lg" }),
-                "pl-0 text-[16px] font-bold w-fit flex items-center gap-2"
-              )}
-            >
-              View Interactive Prototype
-              <ArrowUpRight size={20} className="opacity-60" />
-            </Link>
           </div>
         </div>
       </header>
@@ -374,9 +356,8 @@ const Pour: FC<pageProps> = ({}) => {
               Adding cities
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Planners can add city for each day of the itinerary. They can
+              chose number of days and nights for each city.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -392,9 +373,8 @@ const Pour: FC<pageProps> = ({}) => {
               Adding products
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Once the cities are added, planners can add products to each day.
+              Products include hotels, flights, activities and more.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -410,9 +390,9 @@ const Pour: FC<pageProps> = ({}) => {
               Viewing modes
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              While building the itinerary, planners can view the itinerary in
+              different modes to get a better understanding of the flow –
+              PLanning mode, Map mode and Timeline mode.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -428,9 +408,9 @@ const Pour: FC<pageProps> = ({}) => {
               Edit and export
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Once the itineraries are complete, planners can edit them, add
+              text and export them as PDFs. These PDFs are then shared with the
+              travellers for approval.
             </p>
             <div className="aspect-[1280/854] w-full relative ">
               <video
@@ -453,9 +433,10 @@ const Pour: FC<pageProps> = ({}) => {
               Atoms
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Atoms are the smallest building blocks of the design system like
+              colors, typography, icons, buttons, inputs, etc. In this example
+              we can see how primary color, secondary color, box shadow etc. are
+              defined.
             </p>
             <div className="aspect-[4/3] w-full relative">
               <Image
@@ -470,9 +451,9 @@ const Pour: FC<pageProps> = ({}) => {
               Molecules
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Molecules are combinations of atoms that form a more complex
+              system. In this example, we can see how a card is constructed with
+              different molecules like text, stat and button.
             </p>
             <div className="aspect-[4/3] w-full relative">
               <Image
@@ -487,9 +468,9 @@ const Pour: FC<pageProps> = ({}) => {
               Organisms
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Organisms are combinations of molecules that form a more complex
+              UI Element. In this example, we can see different variotions of
+              the card molecule.
             </p>
             <div className="aspect-[1345/478] w-full relative">
               <Image
@@ -504,9 +485,9 @@ const Pour: FC<pageProps> = ({}) => {
               Templates
             </h4>
             <p className="text-[16px] opacity-90 dark:opacity-85">
-              Lets look at the final screens for the hero flow and later we
-              &apos;ll break down how the design system using the atomic design
-              approach got us there.
+              Templates combine organisms to form a page. In this example, we
+              can see how the itinerary creation page is constructed using
+              different organisms like cards, navbar, background image, etc.
             </p>
             <div className="aspect-[4/3] w-full relative">
               <Image
