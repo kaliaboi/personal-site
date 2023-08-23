@@ -88,21 +88,6 @@ export default function Home() {
                 more prooductive.
               </p>
             </div>
-            <div>
-              <Link
-                href={"https://unberry.com"}
-                className={cn(
-                  buttonVariants({ variant: "link" }),
-                  "pl-0 underline text-[16px]"
-                )}
-              >
-                Unberry Website
-              </Link>
-              <p className="opacity-50">
-                A website for a hiring tech startup I worked with. Built with
-                NextJS.
-              </p>
-            </div>
           </div>
         </section>
       </main>
