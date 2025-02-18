@@ -35,7 +35,8 @@ export default function Home() {
                 Zotero MCP
               </Link>
               <p className="opacity-60 dark:opacity-50">
-                A connector for Claude Desktop to work with collection and sources on your Zotero Cloud.
+                A connector for Claude Desktop to work with collection and
+                sources on your Zotero Cloud.
               </p>
             </div>
             <div>
@@ -64,7 +65,8 @@ export default function Home() {
                 Jenni Churnbot
               </Link>
               <p className="opacity-50">
-                A bot that collect's Jenni's churn data and sends a summary message on our slack.
+                A bot that collect&apos;s Jenni&apos;s churn data and sends a
+                summary message on our slack.
               </p>
             </div>
             <div>
