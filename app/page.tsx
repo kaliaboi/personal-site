@@ -26,50 +26,47 @@ export default function Home() {
             <div>
               {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
-                href={"https://journi.site"}
+                href={"https://github.com/kaliaboi/mcp-zotero"}
                 className={cn(
                   buttonVariants({ variant: "link" }),
                   "pl-0 underline text-[16px]"
                 )}
               >
-                Journi
+                Zotero MCP
               </Link>
               <p className="opacity-60 dark:opacity-50">
-                A tiny AI powered journal I designed, built and shipped from
-                scratch
+                A connector for Claude Desktop to work with collection and sources on your Zotero Cloud.
               </p>
             </div>
             <div>
               {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
-                href={"https://abhishek-kalia.com"}
+                href={"https://github.com/kaliaboi/openalex-js"}
                 className={cn(
                   buttonVariants({ variant: "link" }),
                   "pl-0 underline text-[16px]"
                 )}
               >
-                This Site
+                OpenAlex JS
               </Link>
               <p className="opacity-60 dark:opacity-50">
-                My portfolio built with Next JS, Tailwind CSS, Vercel and Sanity
-                (for content)
+                A typescript wrapper for the OpenAlex open access paper API.
               </p>
             </div>
-            {/* <div>
+            <div>
               <Link
-                href={"https://journi.site"}
+                href={"https://github.com/kaliaboi/churnbot"}
                 className={cn(
                   buttonVariants({ variant: "link" }),
                   "pl-0 underline text-[16px]"
                 )}
               >
-                Beo
+                Jenni Churnbot
               </Link>
               <p className="opacity-50">
-                An app I am building with React Native that aims to restore the
-                Irish language.
+                A bot that collect's Jenni's churn data and sends a summary message on our slack.
               </p>
-            </div> */}
+            </div>
             <div>
               {/* <div className="aspect-video w-full bg-zinc-700"></div> */}
               <Link
